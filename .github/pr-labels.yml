@@ -1,0 +1,49 @@
+apps:browser-extension:
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/browser-extension/*
+          - apps/browser-extension/**/*
+apps:discord-bot:
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/discord-bot/*
+          - apps/discord-bot/**/*
+apps:website:
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/website/*
+          - apps/website/**/*
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - pnpm-lock.yaml
+packages:components:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/components/*
+          - packages/components/**/*
+packages:hooks:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/hooks/*
+          - packages/hooks/**/*
+packages:logger:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/logger/*
+          - packages/logger/**/*
+packages:piston-ts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/piston-ts/*
+          - packages/piston-ts/**/*
+packages:scripts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/scripts/*
+          - packages/scripts/**/*
+packages:style:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/style/*
+          - packages/style/**/*

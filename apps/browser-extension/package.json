@@ -1,0 +1,49 @@
+{
+  "name": "browser-extension",
+  "description": "Run any code snippet you come across on the web with the student.codes browser extension!",
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "pnpm run \"/build:.*/\"",
+    "build:chrome": "use-env -p VITE -P -- vite build --config vite.config.chrome.ts",
+    "build:firefox": "use-env -p VITE -P -- vite build --config vite.config.firefox.ts && ff-zip || true",
+    "dev": "pnpm run \"/dev:.*/\"",
+    "dev:chrome": "use-env -p VITE -- vite --config vite.config.chrome.ts",
+    "dev:firefox": "use-env -p VITE -- vite --config vite.config.firefox.ts"
+  },
+  "dependencies": {
+    "@evaluate/components": "workspace:^",
+    "@evaluate/logger": "workspace:^",
+    "@evaluate/style": "workspace:^",
+    "@t3-oss/env-core": "^0.13.8",
+    "lucide-react": "^0.546.0",
+    "piston.ts": "workspace:^",
+    "posthog-js": "^1.276.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "webext-bridge": "^6.0.1",
+    "webextension-polyfill": "^0.12.0",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.28.3",
+    "@babel/parser": "^7.28.4",
+    "@babel/traverse": "^7.28.4",
+    "@babel/types": "^7.28.4",
+    "@crxjs/vite-plugin": "2.0.0-beta.30",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@types/webextension-polyfill": "^0.12.4",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.1.14",
+    "vite": "3.2.11",
+    "vite-plugin-zip-pack": "^1.2.4",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
