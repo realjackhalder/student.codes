@@ -25,11 +25,11 @@ import { Toaster } from '@evaluate/components/toast';
 import { TooltipProvider } from '@evaluate/components/tooltip';
 import { SayProvider } from '@sayable/react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { useEffect, useState } from 'react';
 import { injectPageEventCapturing } from '~/services/posthog';
-import { BreakpointIndicator } from './breakpoint-indicator';
+// import { BreakpointIndicator } from './breakpoint-indicator';
 
 export function BodyProviders(
   p: React.PropsWithChildren<React.ComponentProps<typeof SayProvider>>,
@@ -59,8 +59,8 @@ export function BodyProviders(
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <SayProvider {...p}>{p.children}</SayProvider>
-        <ReactQueryDevtools initialIsOpen={false} />
-        <BreakpointIndicator />
+        {/* <ReactQueryDevtools initialIsOpen={false} />
+        <BreakpointIndicator /> */}
         <SpeedInsights />
         <Toaster />
       </TooltipProvider>

@@ -35,28 +35,30 @@ export default function TermsOfServicePage() {
         <p className="leading-7 [&:not(:first-child)]:mt-6">
           By using our services, you agree to adhere to the following
           guidelines:
-          <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-            <li>
-              You will use our services lawfully and in compliance with
-              applicable laws and regulations.
-            </li>
-            <li>
-              You will not use our services for any unauthorised or illegal
-              purposes, including infringement of intellectual property rights
-              and data protection laws.
-            </li>
-            <li>
-              You will not engage in activities that harm or disrupt our service
-              or interfere with other users.
-            </li>
-            <li>
-              You will not create, distribute, or promote hate speech,
-              harassment, or discrimination.
-            </li>
-            <li>
-              You will not impersonate others or misrepresent your identity.
-            </li>
-          </ul>
+        </p>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          <li>
+            You will use our services lawfully and in compliance with
+            applicable laws and regulations.
+          </li>
+          <li>
+            You will not use our services for any unauthorised or illegal
+            purposes, including infringement of intellectual property rights
+            and data protection laws.
+          </li>
+          <li>
+            You will not engage in activities that harm or disrupt our service
+            or interfere with other users.
+          </li>
+          <li>
+            You will not create, distribute, or promote hate speech,
+            harassment, or discrimination.
+          </li>
+          <li>
+            You will not impersonate others or misrepresent your identity.
+          </li>
+        </ul>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
           We reserve the right to suspend or terminate your access if you
           violate these terms.
         </p>
