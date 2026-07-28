@@ -1,322 +1,322 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2025-10-10 09:16+1300\n"
+"POT-Creation-Date: 2026-07-28 17:43+0700\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: de\n"
 "X-Generator: sayable\n"
 
 #: src/components/terminal/html-preview.tsx:40
 msgid "Nothing to render here."
-msgstr "Nothing to render here."
+msgstr ""
 
 #: src/components/terminal/index.tsx:44
 msgid "Run"
-msgstr "Run"
+msgstr ""
 
 #: src/components/terminal/index.tsx:59
 msgid "Compile"
-msgstr "Compile"
+msgstr ""
 
 #: src/components/terminal/index.tsx:74
 msgid "Preview"
-msgstr "Preview"
+msgstr ""
 
 #: src/components/terminal/index.tsx:88
 msgid "Clear"
-msgstr "Clear"
+msgstr ""
 
 #: src/components/terminal/index.tsx:102
 msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
-msgstr "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
+msgstr ""
 
 #: src/components/terminal/index.tsx:107
 msgid "Your code executed successfully; however, it did not generate any output for the console."
-msgstr "Your code executed successfully; however, it did not generate any output for the console."
+msgstr ""
 
 #: src/components/terminal/index.tsx:112
 msgid "Write your code and press <0/> to execute it. The results will be displayed here."
-msgstr "Write your code and press <0/> to execute it. The results will be displayed here."
+msgstr ""
 
 #: src/components/terminal/index.tsx:132
 msgid "Your code compilation exceeded the allotted time and was terminated. Consider optimising your code for faster compilation."
-msgstr "Your code compilation exceeded the allotted time and was terminated. Consider optimising your code for faster compilation."
+msgstr ""
 
 #: src/components/terminal/index.tsx:138
 msgid "<0>If</0> this runtime requires compilation, the output will be displayed here."
-msgstr "<0>If</0> this runtime requires compilation, the output will be displayed here."
+msgstr ""
 
 #: src/components/terminal/index.tsx:156
 msgid "This runtime does not have a way to display any preview."
-msgstr "This runtime does not have a way to display any preview."
+msgstr ""
 
 #: src/components/header/index.tsx:50
 #: src/app/[locale]/page.tsx:58
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
 msgid "Playgrounds"
-msgstr "Playgrounds"
+msgstr ""
 
 #: src/components/header/index.tsx:61
 #: src/app/[locale]/page.tsx:79
 msgid "Browser Extension"
-msgstr "Browser Extension"
+msgstr ""
 
 #: src/components/header/index.tsx:63
 msgid "new"
-msgstr "new"
+msgstr ""
 
 #: src/components/header/index.tsx:70
 #: src/app/[locale]/page.tsx:100
 msgid "Discord Bot"
-msgstr "Discord Bot"
+msgstr ""
 
 #: src/components/header/index.tsx:137
 msgid "Toggle Mobile Navigation"
-msgstr "Toggle Mobile Navigation"
+msgstr ""
 
 #: src/components/header/locale-switcher.tsx:25
 msgid "Change Language"
-msgstr "Change Language"
+msgstr ""
 
 #: src/components/header/theme-switcher.tsx:26
 msgid "Toggle Theme"
-msgstr "Toggle Theme"
+msgstr ""
 
 #: src/components/explorer/index.tsx:43
 msgid "Explorer"
-msgstr "Explorer"
+msgstr ""
 
 #: src/components/explorer/index.tsx:49
 #: src/components/explorer/index.tsx:57
 msgid "New File"
-msgstr "New File"
+msgstr ""
 
 #: src/components/explorer/index.tsx:62
 #: src/components/explorer/index.tsx:70
 msgid "New Folder"
-msgstr "New Folder"
+msgstr ""
 
 #: src/components/explorer/index.tsx:75
 #: src/components/explorer/index.tsx:83
 msgid "Download as Zip"
-msgstr "Download as Zip"
+msgstr ""
 
 #: src/components/explorer/index.tsx:108
 msgid "This is the file explorer. Create a new file to get started."
-msgstr "This is the file explorer. Create a new file to get started."
+msgstr ""
 
 #: src/components/explorer/name.tsx:36
 msgid "A name must be provided."
-msgstr "A name must be provided."
+msgstr ""
 
 #: src/components/explorer/name.tsx:38
 msgid "This name is invalid."
-msgstr "This name is invalid."
+msgstr ""
 
 #: src/components/explorer/name.tsx:40
 msgid "This name already exists."
-msgstr "This name already exists."
+msgstr ""
 
 #: src/components/explorer/name.tsx:80
 #: src/components/editor/opened-files/button.tsx:40
 msgid "CLI Arguments"
-msgstr "CLI Arguments"
+msgstr ""
 
 #: src/components/explorer/name.tsx:81
 #: src/components/editor/opened-files/button.tsx:41
 msgid "STDIN"
-msgstr "STDIN"
+msgstr ""
 
 #: src/components/explorer/use.tsx:68
 msgid "Saved and copied URL to clipboard"
-msgstr "Saved and copied URL to clipboard"
+msgstr ""
 
 #: src/components/explorer/file/item.tsx:65
 msgid "Rename File"
-msgstr "Rename File"
+msgstr ""
 
 #: src/components/explorer/file/item.tsx:81
 msgid "Delete File"
-msgstr "Delete File"
+msgstr ""
 
 #: src/components/editor/opened-files/button.tsx:42
 msgid "Untitled"
-msgstr "Untitled"
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:119
 msgid "Select an entry file..."
-msgstr "Select an entry file..."
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:134
 msgid "No files found"
-msgstr "No files found"
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:150
 msgid "<0>Execute</0> <1>{2}</1> <3>Code</3>"
-msgstr "<0>Execute</0> <1>{2}</1> <3>Code</3>"
+msgstr ""
 
 #: src/app/manifest.ts:10
 #: src/app/[locale]/metadata.ts:15
 msgid "Test code in any programming language with student.codes! Run code snippets in your browser, without installing anything."
-msgstr "Test code in any programming language with student.codes! Run code snippets in your browser, without installing anything."
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:17
 msgid "online playground"
-msgstr "online playground"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:18
 msgid "code playground"
-msgstr "code playground"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:19
 msgid "code sandbox"
-msgstr "code sandbox"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:20
 msgid "online compiler"
-msgstr "online compiler"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:21
 msgid "online interpreter"
-msgstr "online interpreter"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:25
 msgid "student.codes Platform"
-msgstr "student.codes Platform"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:27
 msgid "Coming Soon"
-msgstr "Coming Soon"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:34
 msgid "The Next-Gen"
-msgstr "The Next-Gen"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:36
 msgid "Code Sandbox"
-msgstr "Code Sandbox"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:40
 msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
-msgstr "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:61
 msgid "Explore interactive code environments directly in your browser."
-msgstr "Explore interactive code environments directly in your browser."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:66
 msgid "Explore Playgrounds"
-msgstr "Explore Playgrounds"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:82
 msgid "Execute code snippets instantly while browsing Chrome or Firefox."
-msgstr "Execute code snippets instantly while browsing Chrome or Firefox."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:87
 msgid "Get Extension"
-msgstr "Get Extension"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:103
 msgid "Run code snippets directly in your Discord servers with friends."
-msgstr "Run code snippets directly in your Discord servers with friends."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:108
 msgid "Add Discord Bot"
-msgstr "Add Discord Bot"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:122
 msgid "Try Playgrounds Now"
-msgstr "Try Playgrounds Now"
+msgstr ""
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
-msgstr "The <0>student.codes</0> Discord Bot"
+msgstr ""
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:15
 msgid "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
-msgstr "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
+msgstr ""
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:38
 msgid "student.codes for <0>Discord</0>"
-msgstr "student.codes for <0>Discord</0>"
+msgstr ""
 
 #: src/app/[locale]/(products)/products/browser-extension/page.tsx:11
 msgid "The <0>student.codes</0> Browser Extension"
-msgstr "The <0>student.codes</0> Browser Extension"
+msgstr ""
 
 #: src/app/[locale]/(products)/products/browser-extension/page.tsx:17
 msgid "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
-msgstr "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
+msgstr ""
 
 #: src/app/[locale]/(products)/products/browser-extension/page.tsx:43
 msgid "student.codes for <0>Chrome</0>"
-msgstr "student.codes for <0>Chrome</0>"
+msgstr ""
 
 #: src/app/[locale]/(products)/products/browser-extension/page.tsx:129
 msgid "student.codes for <0>Firefox</0>"
-msgstr "student.codes for <0>Firefox</0>"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:24
 msgid "Explore and run code in different programming languages and runtimes."
-msgstr "Explore and run code in different programming languages and runtimes."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:30
 msgid "Powered by the Piston execution engine."
-msgstr "Powered by the Piston execution engine."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:83
 msgid "Choose a playground!"
-msgstr "Choose a playground!"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
 msgid "Search runtime playgrounds..."
-msgstr "Search runtime playgrounds..."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
 msgid "Clear Search"
-msgstr "Clear Search"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:117
 msgid "Sort by..."
-msgstr "Sort by..."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:119
 msgid "Toggle Sort By Dropdown"
-msgstr "Toggle Sort By Dropdown"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
 msgid "Sort By"
-msgstr "Sort By"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
 msgid "Popularity"
-msgstr "Popularity"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:131
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
 msgid "Open {0} Playground"
-msgstr "Open {0} Playground"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:10
 msgid "Not Found"
-msgstr "Not Found"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:13
 msgid "Hmm, we couldn't find the playground you're looking for."
-msgstr "Hmm, we couldn't find the playground you're looking for."
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:19
 msgid "Browse Playgrounds"
-msgstr "Browse Playgrounds"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:28
 msgid "{0} Online Playground on student.codes"
-msgstr "{0} Online Playground on student.codes"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:29
 msgid "Run {0} and more code snippets online in your browser with student.codes's code playground."
-msgstr "Run {0} and more code snippets online in your browser with student.codes's code playground."
+msgstr ""
