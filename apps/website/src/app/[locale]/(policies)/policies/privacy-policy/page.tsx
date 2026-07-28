@@ -23,11 +23,11 @@ export default function PrivacyPolicyPage() {
           Introduction
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          The privacy of our visitors is a top priority for student.codes
-          ("we", "our", "us") and, by extension, student.codes ("service") and its
-          products. The types of information that student.codes gathers and records,
-          as well as how we utilise it, are detailed in this privacy policy
-          document.
+          The privacy of our visitors is a top priority for student.codes ("we",
+          "our", "us") and, by extension, student.codes ("service") and its
+          products. The types of information that student.codes gathers and
+          records, as well as how we utilise it, are detailed in this privacy
+          policy document.
         </p>
 
         <h2 className="mt-10 scroll-m-20 border-b pb-1 font-semibold text-3xl tracking-tight first:mt-0">

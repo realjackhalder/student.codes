@@ -9,15 +9,16 @@ export default function BrowserExtensionPlatformPage() {
       <div className="flex flex-col items-center justify-center gap-6 text-center">
         <h1 className="font-bold text-3xl tracking-tight md:text-5xl">
           <Say>
-            The <span className="text-primary">student.codes</span> Browser Extension
+            The <span className="text-primary">student.codes</span> Browser
+            Extension
           </Say>
         </h1>
         <p className="mx-auto max-w-5xl text-balance text-sm md:text-base">
           <Say>
             When you stumble upon code snippets while browsing the web, wouldn't
-            it be great to execute them instantly? Look no further—the student.codes
-            extension is your solution, with its over 70 supported languages and
-            quick code execution capabilities.
+            it be great to execute them instantly? Look no further—the
+            student.codes extension is your solution, with its over 70 supported
+            languages and quick code execution capabilities.
           </Say>
         </p>
 

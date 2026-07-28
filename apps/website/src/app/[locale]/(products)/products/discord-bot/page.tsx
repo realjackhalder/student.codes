@@ -13,9 +13,10 @@ export default function BrowserExtensionPlatformContent() {
         </h1>
         <p className="mx-auto max-w-5xl text-balance text-sm md:text-base">
           <Say>
-            Run code snippets directly in your Discord server with the student.codes
-            bot! student.codes supports over 70 languages and is perfect for quickly
-            testing code and sharing results with your friends.
+            Run code snippets directly in your Discord server with the
+            student.codes bot! student.codes supports over 70 languages and is
+            perfect for quickly testing code and sharing results with your
+            friends.
           </Say>
         </p>
       </div>
