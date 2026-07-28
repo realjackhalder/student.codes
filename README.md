@@ -1,6 +1,4 @@
-<p align="center">
-  <img src=".github/banner.png">
-</p>
+
 
 <p align="center">
   <a href="https://student.codes/">Website</a> -
