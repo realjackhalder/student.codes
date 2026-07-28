@@ -11,7 +11,7 @@
     "dev": "pnpm run \"/dev:.*/\"",
     "dev:packages": "turbo watch build --filter=\"./packages/*\"",
     "dev:apps": "turbo run dev --filter=\"./apps/*\"",
-    "prepare": "husky & ts-patch install",
+    "prepare": "test -z \"$CI\" && husky || true; ts-patch install",
     "graph": "pnpx nx@18 graph"
   },
   "devDependencies": {

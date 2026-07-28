@@ -316,6 +316,9 @@ importers:
         specifier: 4.1.12
         version: 4.1.12
     devDependencies:
+      '@evaluate/scripts':
+        specifier: workspace:^
+        version: link:../../packages/scripts
       '@million/lint':
         specifier: ^1.0.14
         version: 1.0.14(rollup@4.45.1)
