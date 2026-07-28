@@ -25,6 +25,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
+      next:
+        specifier: 15.5.7
+        version: 15.5.7(@babel/core@7.26.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       ts-patch:
         specifier: ^3.3.0
         version: 3.3.0
