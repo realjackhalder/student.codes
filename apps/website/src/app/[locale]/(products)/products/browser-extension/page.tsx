@@ -54,7 +54,7 @@ export default function BrowserExtensionPlatformPage() {
               <Link href="/go/chrome-extension?for=edge" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
-                  src="/images/browsers/edge.svg"
+                  src="/images/browsers/edge.png"
                   className="aspect-square w-6"
                   alt="Edge"
                 />
