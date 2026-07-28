@@ -8,23 +8,23 @@ msgstr ""
 
 #: src/components/terminal/html-preview.tsx:40
 msgid "Nothing to render here."
-msgstr ""
+msgstr "Hier gibt es nichts anzuzeigen."
 
 #: src/components/terminal/index.tsx:44
 msgid "Run"
-msgstr ""
+msgstr "Ausführen"
 
 #: src/components/terminal/index.tsx:59
 msgid "Compile"
-msgstr ""
+msgstr "Kompilieren"
 
 #: src/components/terminal/index.tsx:74
 msgid "Preview"
-msgstr ""
+msgstr "Vorschau"
 
 #: src/components/terminal/index.tsx:88
 msgid "Clear"
-msgstr ""
+msgstr "Löschen"
 
 #: src/components/terminal/index.tsx:102
 msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
@@ -54,21 +54,21 @@ msgstr ""
 #: src/app/[locale]/page.tsx:58
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
 msgid "Playgrounds"
-msgstr ""
+msgstr "Spielwiesen"
 
 #: src/components/header/index.tsx:61
 #: src/app/[locale]/page.tsx:79
 msgid "Browser Extension"
-msgstr ""
+msgstr "Browser-Erweiterung"
 
 #: src/components/header/index.tsx:63
 msgid "new"
-msgstr ""
+msgstr "neu"
 
 #: src/components/header/index.tsx:70
 #: src/app/[locale]/page.tsx:100
 msgid "Discord Bot"
-msgstr ""
+msgstr "Discord-Bot"
 
 #: src/components/header/index.tsx:137
 msgid "Toggle Mobile Navigation"
@@ -76,30 +76,30 @@ msgstr ""
 
 #: src/components/header/locale-switcher.tsx:25
 msgid "Change Language"
-msgstr ""
+msgstr "Sprache wechseln"
 
 #: src/components/header/theme-switcher.tsx:26
 msgid "Toggle Theme"
-msgstr ""
+msgstr "Design wechseln"
 
 #: src/components/explorer/index.tsx:43
 msgid "Explorer"
-msgstr ""
+msgstr "Dateibrowser"
 
 #: src/components/explorer/index.tsx:49
 #: src/components/explorer/index.tsx:57
 msgid "New File"
-msgstr ""
+msgstr "Neue Datei"
 
 #: src/components/explorer/index.tsx:62
 #: src/components/explorer/index.tsx:70
 msgid "New Folder"
-msgstr ""
+msgstr "Neuer Ordner"
 
 #: src/components/explorer/index.tsx:75
 #: src/components/explorer/index.tsx:83
 msgid "Download as Zip"
-msgstr ""
+msgstr "Als Zip herunterladen"
 
 #: src/components/explorer/index.tsx:108
 msgid "This is the file explorer. Create a new file to get started."
@@ -129,19 +129,19 @@ msgstr ""
 
 #: src/components/explorer/use.tsx:68
 msgid "Saved and copied URL to clipboard"
-msgstr ""
+msgstr "Gespeichert und URL in Zwischenablage kopiert"
 
 #: src/components/explorer/file/item.tsx:65
 msgid "Rename File"
-msgstr ""
+msgstr "Datei umbenennen"
 
 #: src/components/explorer/file/item.tsx:81
 msgid "Delete File"
-msgstr ""
+msgstr "Datei löschen"
 
 #: src/components/editor/opened-files/button.tsx:42
 msgid "Untitled"
-msgstr ""
+msgstr "Unbenannt"
 
 #: src/components/editor/execute-bar/index.tsx:119
 msgid "Select an entry file..."
@@ -182,19 +182,19 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:25
 msgid "student.codes Platform"
-msgstr ""
+msgstr "student.codes Plattform"
 
 #: src/app/[locale]/page.tsx:27
 msgid "Coming Soon"
-msgstr ""
+msgstr "Demnächst"
 
 #: src/app/[locale]/page.tsx:34
 msgid "The Next-Gen"
-msgstr ""
+msgstr "Die nächste Generation"
 
 #: src/app/[locale]/page.tsx:36
 msgid "Code Sandbox"
-msgstr ""
+msgstr "Code-Sandbox"
 
 #: src/app/[locale]/page.tsx:40
 msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
@@ -206,7 +206,7 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:66
 msgid "Explore Playgrounds"
-msgstr ""
+msgstr "Spielwiesen erkunden"
 
 #: src/app/[locale]/page.tsx:82
 msgid "Execute code snippets instantly while browsing Chrome or Firefox."
@@ -214,7 +214,7 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:87
 msgid "Get Extension"
-msgstr ""
+msgstr "Erweiterung holen"
 
 #: src/app/[locale]/page.tsx:103
 msgid "Run code snippets directly in your Discord servers with friends."
@@ -222,11 +222,11 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:108
 msgid "Add Discord Bot"
-msgstr ""
+msgstr "Discord-Bot hinzufügen"
 
 #: src/app/[locale]/page.tsx:122
 msgid "Try Playgrounds Now"
-msgstr ""
+msgstr "Jetzt ausprobieren"
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
@@ -271,7 +271,7 @@ msgstr ""
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
 msgid "Search runtime playgrounds..."
-msgstr ""
+msgstr "Spielwiesen suchen..."
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
 msgid "Clear Search"
@@ -287,15 +287,15 @@ msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
 msgid "Sort By"
-msgstr ""
+msgstr "Sortieren nach"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
 msgid "Popularity"
-msgstr ""
+msgstr "Beliebtheit"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:131
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
 msgid "Open {0} Playground"
@@ -303,7 +303,7 @@ msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:10
 msgid "Not Found"
-msgstr ""
+msgstr "Nicht gefunden"
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:13
 msgid "Hmm, we couldn't find the playground you're looking for."

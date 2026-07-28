@@ -10,7 +10,7 @@ import {
 import { Say, useSay } from '@sayable/react';
 import { LanguagesIcon } from 'lucide-react';
 import Link from 'next/link';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
 
 export function LocaleSwitcher() {
@@ -43,7 +43,6 @@ export function LocaleSwitcher() {
 }
 
 function LocaleSwitcherItem({ locale, ...props }: { locale: string }) {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -63,10 +62,10 @@ function LocaleSwitcherItem({ locale, ...props }: { locale: string }) {
     <Link
       href={localisedHref}
       {...props}
-      onClick={() => {
+      onClick={(e) => {
+        e.preventDefault();
         updatePreferredLocale();
-        router.push(localisedHref);
-        return false;
+        window.location.href = localisedHref;
       }}
     >
       {new Intl.DisplayNames([locale], { type: 'language' }).of(locale)}

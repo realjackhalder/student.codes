@@ -12,19 +12,19 @@ msgstr ""
 
 #: src/components/terminal/index.tsx:44
 msgid "Run"
-msgstr ""
+msgstr "実行"
 
 #: src/components/terminal/index.tsx:59
 msgid "Compile"
-msgstr ""
+msgstr "コンパイル"
 
 #: src/components/terminal/index.tsx:74
 msgid "Preview"
-msgstr ""
+msgstr "プレビュー"
 
 #: src/components/terminal/index.tsx:88
 msgid "Clear"
-msgstr ""
+msgstr "クリア"
 
 #: src/components/terminal/index.tsx:102
 msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
@@ -54,21 +54,21 @@ msgstr ""
 #: src/app/[locale]/page.tsx:58
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
 msgid "Playgrounds"
-msgstr ""
+msgstr "プレイグラウンド"
 
 #: src/components/header/index.tsx:61
 #: src/app/[locale]/page.tsx:79
 msgid "Browser Extension"
-msgstr ""
+msgstr "ブラウザ拡張機能"
 
 #: src/components/header/index.tsx:63
 msgid "new"
-msgstr ""
+msgstr "新着"
 
 #: src/components/header/index.tsx:70
 #: src/app/[locale]/page.tsx:100
 msgid "Discord Bot"
-msgstr ""
+msgstr "Discord ボット"
 
 #: src/components/header/index.tsx:137
 msgid "Toggle Mobile Navigation"
@@ -76,25 +76,25 @@ msgstr ""
 
 #: src/components/header/locale-switcher.tsx:25
 msgid "Change Language"
-msgstr ""
+msgstr "言語を変更"
 
 #: src/components/header/theme-switcher.tsx:26
 msgid "Toggle Theme"
-msgstr ""
+msgstr "テーマ切り替え"
 
 #: src/components/explorer/index.tsx:43
 msgid "Explorer"
-msgstr ""
+msgstr "エクスプローラー"
 
 #: src/components/explorer/index.tsx:49
 #: src/components/explorer/index.tsx:57
 msgid "New File"
-msgstr ""
+msgstr "新規ファイル"
 
 #: src/components/explorer/index.tsx:62
 #: src/components/explorer/index.tsx:70
 msgid "New Folder"
-msgstr ""
+msgstr "新規フォルダー"
 
 #: src/components/explorer/index.tsx:75
 #: src/components/explorer/index.tsx:83
@@ -186,15 +186,15 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:27
 msgid "Coming Soon"
-msgstr ""
+msgstr "近日公開"
 
 #: src/app/[locale]/page.tsx:34
 msgid "The Next-Gen"
-msgstr ""
+msgstr "次世代の"
 
 #: src/app/[locale]/page.tsx:36
 msgid "Code Sandbox"
-msgstr ""
+msgstr "コードサンドボックス"
 
 #: src/app/[locale]/page.tsx:40
 msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
@@ -206,7 +206,7 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:66
 msgid "Explore Playgrounds"
-msgstr ""
+msgstr "プレイグラウンドを探索"
 
 #: src/app/[locale]/page.tsx:82
 msgid "Execute code snippets instantly while browsing Chrome or Firefox."
@@ -214,7 +214,7 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:87
 msgid "Get Extension"
-msgstr ""
+msgstr "拡張機能を入手"
 
 #: src/app/[locale]/page.tsx:103
 msgid "Run code snippets directly in your Discord servers with friends."
@@ -222,11 +222,11 @@ msgstr ""
 
 #: src/app/[locale]/page.tsx:108
 msgid "Add Discord Bot"
-msgstr ""
+msgstr "ボットを追加"
 
 #: src/app/[locale]/page.tsx:122
 msgid "Try Playgrounds Now"
-msgstr ""
+msgstr "今すぐ試す"
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
@@ -271,7 +271,7 @@ msgstr ""
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
 msgid "Search runtime playgrounds..."
-msgstr ""
+msgstr "検索..."
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
 msgid "Clear Search"
@@ -287,15 +287,15 @@ msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
 msgid "Sort By"
-msgstr ""
+msgstr "並び替え"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
 msgid "Popularity"
-msgstr ""
+msgstr "人気度"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:131
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
 msgid "Open {0} Playground"
@@ -303,7 +303,7 @@ msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:10
 msgid "Not Found"
-msgstr ""
+msgstr "見つかりません"
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:13
 msgid "Hmm, we couldn't find the playground you're looking for."

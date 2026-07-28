@@ -6,7 +6,7 @@
   <a href="https://student.codes/">Website</a> -
   <a href="https://student.codes/products/browser-extension">Browser Extension</a> -
   <a href="https://student.codes/products/discord-bot">Discord Bot</a> -
-  <a href="https://discord.gg/rtBC7mH5cy">Community</a>
+  <a href="https://discord.gg/WMuCvVn5uh">Community</a>
 </p>
 
 ---
