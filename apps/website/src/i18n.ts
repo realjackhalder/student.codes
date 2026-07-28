@@ -23,4 +23,19 @@ export default new Sayable({
   pt: () =>
     import('./locales/pt/messages.json', { with: { type: 'json' } }) //
       .then((m) => m.default),
+  th: () =>
+    import('./locales/th/messages.json', { with: { type: 'json' } }) //
+      .then((m) => m.default),
+  my: () =>
+    import('./locales/my/messages.json', { with: { type: 'json' } }) //
+      .then((m) => m.default),
+  ko: () =>
+    import('./locales/ko/messages.json', { with: { type: 'json' } }) //
+      .then((m) => m.default),
+  ar: () =>
+    import('./locales/ar/messages.json', { with: { type: 'json' } }) //
+      .then((m) => m.default),
+  bn: () =>
+    import('./locales/bn/messages.json', { with: { type: 'json' } }) //
+      .then((m) => m.default),
 });

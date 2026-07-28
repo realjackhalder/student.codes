@@ -1,30 +1,30 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2026-07-28 17:43+0700\n"
+"POT-Creation-Date: 2026-07-28 18:13+0700\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: my\n"
 "X-Generator: sayable\n"
 
 #: src/components/terminal/html-preview.tsx:40
 msgid "Nothing to render here."
-msgstr "Nada que renderizar aquí."
+msgstr ""
 
 #: src/components/terminal/index.tsx:44
 msgid "Run"
-msgstr "Ejecutar"
+msgstr "Run မည်"
 
 #: src/components/terminal/index.tsx:59
 msgid "Compile"
-msgstr "Compilar"
+msgstr "Compile လုပ်မည်"
 
 #: src/components/terminal/index.tsx:74
 msgid "Preview"
-msgstr "Vista previa"
+msgstr "အကြမ်းကြည့်ရန်"
 
 #: src/components/terminal/index.tsx:88
 msgid "Clear"
-msgstr "Limpiar"
+msgstr "ရှင်းလင်းမည်"
 
 #: src/components/terminal/index.tsx:102
 msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
@@ -54,102 +54,102 @@ msgstr ""
 #: src/app/[locale]/page.tsx:58
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
 msgid "Playgrounds"
-msgstr "Entornos"
+msgstr "Playgrounds များ"
 
 #: src/components/header/index.tsx:61
 #: src/app/[locale]/page.tsx:79
 msgid "Browser Extension"
-msgstr "Extensión del navegador"
+msgstr "Browser Extension"
 
 #: src/components/header/index.tsx:63
 msgid "new"
-msgstr "nuevo"
+msgstr "အသစ်"
 
 #: src/components/header/index.tsx:70
 #: src/app/[locale]/page.tsx:100
 msgid "Discord Bot"
-msgstr "Bot de Discord"
+msgstr "Discord Bot"
 
 #: src/components/header/index.tsx:137
 msgid "Toggle Mobile Navigation"
-msgstr "Alternar navegación móvil"
+msgstr ""
 
 #: src/components/header/locale-switcher.tsx:25
 msgid "Change Language"
-msgstr "Cambiar idioma"
+msgstr "ဘာသာစကားပြောင်းရန်"
 
 #: src/components/header/theme-switcher.tsx:26
 msgid "Toggle Theme"
-msgstr "Alternar tema"
+msgstr "Theme ပြောင်းရန်"
 
 #: src/components/explorer/index.tsx:43
 msgid "Explorer"
-msgstr "Explorador"
+msgstr "Explorer"
 
 #: src/components/explorer/index.tsx:49
 #: src/components/explorer/index.tsx:57
 msgid "New File"
-msgstr "Nuevo archivo"
+msgstr "File အသစ်"
 
 #: src/components/explorer/index.tsx:62
 #: src/components/explorer/index.tsx:70
 msgid "New Folder"
-msgstr "Nueva carpeta"
+msgstr "Folder အသစ်"
 
 #: src/components/explorer/index.tsx:75
 #: src/components/explorer/index.tsx:83
 msgid "Download as Zip"
-msgstr "Descargar como Zip"
+msgstr ""
 
 #: src/components/explorer/index.tsx:108
 msgid "This is the file explorer. Create a new file to get started."
-msgstr "Este es el explorador de archivos. Crea un nuevo archivo para comenzar."
+msgstr ""
 
 #: src/components/explorer/name.tsx:36
 msgid "A name must be provided."
-msgstr "Se debe proporcionar un nombre."
+msgstr ""
 
 #: src/components/explorer/name.tsx:38
 msgid "This name is invalid."
-msgstr "Este nombre no es válido."
+msgstr ""
 
 #: src/components/explorer/name.tsx:40
 msgid "This name already exists."
-msgstr "Este nombre ya existe."
+msgstr ""
 
 #: src/components/explorer/name.tsx:80
 #: src/components/editor/opened-files/button.tsx:40
 msgid "CLI Arguments"
-msgstr "Argumentos CLI"
+msgstr ""
 
 #: src/components/explorer/name.tsx:81
 #: src/components/editor/opened-files/button.tsx:41
 msgid "STDIN"
-msgstr "Entrada estándar (STDIN)"
+msgstr ""
 
 #: src/components/explorer/use.tsx:68
 msgid "Saved and copied URL to clipboard"
-msgstr "Guardado y URL copiada al portapapeles"
+msgstr ""
 
 #: src/components/explorer/file/item.tsx:65
 msgid "Rename File"
-msgstr "Renombrar archivo"
+msgstr ""
 
 #: src/components/explorer/file/item.tsx:81
 msgid "Delete File"
-msgstr "Eliminar archivo"
+msgstr ""
 
 #: src/components/editor/opened-files/button.tsx:42
 msgid "Untitled"
-msgstr "Sin título"
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:119
 msgid "Select an entry file..."
-msgstr "Seleccionar archivo de entrada..."
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:134
 msgid "No files found"
-msgstr "No se encontraron archivos"
+msgstr ""
 
 #: src/components/editor/execute-bar/index.tsx:150
 msgid "<0>Execute</0> <1>{2}</1> <3>Code</3>"
@@ -162,71 +162,71 @@ msgstr ""
 
 #: src/app/[locale]/metadata.ts:17
 msgid "online playground"
-msgstr "entorno de código online"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:18
 msgid "code playground"
-msgstr "entorno interactivo"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:19
 msgid "code sandbox"
-msgstr "sandbox de código"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:20
 msgid "online compiler"
-msgstr "compilador online"
+msgstr ""
 
 #: src/app/[locale]/metadata.ts:21
 msgid "online interpreter"
-msgstr "intérprete online"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:25
 msgid "student.codes Platform"
-msgstr "Plataforma student.codes"
+msgstr ""
 
 #: src/app/[locale]/page.tsx:27
 msgid "Coming Soon"
-msgstr "Próximamente"
+msgstr "မကြာမီလာမည်"
 
 #: src/app/[locale]/page.tsx:34
 msgid "The Next-Gen"
-msgstr "La nueva generación de"
+msgstr "မျိုးဆက်သစ်"
 
 #: src/app/[locale]/page.tsx:36
 msgid "Code Sandbox"
-msgstr "Sandbox de código"
+msgstr "Code Sandbox"
 
 #: src/app/[locale]/page.tsx:40
 msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
-msgstr "Estamos trabajando duro para ofrecerte la mejor plataforma online para probar, compartir y ejecutar código en más de 70 lenguajes."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:61
 msgid "Explore interactive code environments directly in your browser."
-msgstr "Explora entornos de código interactivos directamente en tu navegador."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:66
 msgid "Explore Playgrounds"
-msgstr "Explorar entornos"
+msgstr "Playgrounds များကြည့်ရန်"
 
 #: src/app/[locale]/page.tsx:82
 msgid "Execute code snippets instantly while browsing Chrome or Firefox."
-msgstr "Ejecuta fragmentos de código al instante mientras navegas en Chrome o Firefox."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:87
 msgid "Get Extension"
-msgstr "Obtener extensión"
+msgstr "Extension ရယူပါ"
 
 #: src/app/[locale]/page.tsx:103
 msgid "Run code snippets directly in your Discord servers with friends."
-msgstr "Ejecuta código directamente en tus servidores de Discord con amigos."
+msgstr ""
 
 #: src/app/[locale]/page.tsx:108
 msgid "Add Discord Bot"
-msgstr "Añadir bot de Discord"
+msgstr "Discord Bot ထည့်မည်"
 
 #: src/app/[locale]/page.tsx:122
 msgid "Try Playgrounds Now"
-msgstr "Probar entornos ahora"
+msgstr "ယခုစမ်းသပ်ပါ"
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
@@ -258,52 +258,52 @@ msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:24
 msgid "Explore and run code in different programming languages and runtimes."
-msgstr "Explora y ejecuta código en diferentes lenguajes de programación y entornos."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:30
 msgid "Powered by the Piston execution engine."
-msgstr "Impulsado por el motor de ejecución Piston."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:83
 msgid "Choose a playground!"
-msgstr "¡Elige un entorno!"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
 msgid "Search runtime playgrounds..."
-msgstr "Buscar entornos..."
+msgstr "ရှာဖွေရန်..."
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
 msgid "Clear Search"
-msgstr "Limpiar búsqueda"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:117
 msgid "Sort by..."
-msgstr "Ordenar por..."
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:119
 msgid "Toggle Sort By Dropdown"
-msgstr "Alternar menú de ordenación"
+msgstr ""
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
 msgid "Sort By"
-msgstr "Ordenar por"
+msgstr "မျိုးတူခွဲရန်"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
 msgid "Popularity"
-msgstr "Popularidad"
+msgstr "လူကြိုက်များမှု"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:131
 msgid "Name"
-msgstr "Nombre"
+msgstr "အမည်"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
 msgid "Open {0} Playground"
-msgstr "Abrir entorno de {0}"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:10
 msgid "Not Found"
-msgstr "No encontrado"
+msgstr "ရှာမတွေ့ပါ"
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:13
 msgid "Hmm, we couldn't find the playground you're looking for."
@@ -311,7 +311,7 @@ msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:19
 msgid "Browse Playgrounds"
-msgstr "Explorar entornos"
+msgstr ""
 
 #: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:28
 msgid "{0} Online Playground on student.codes"

@@ -248,11 +248,11 @@ msgstr "The <0>student.codes</0> Browser Extension"
 msgid "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 msgstr "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:43
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:40
 msgid "student.codes for <0>Chrome</0>"
 msgstr "student.codes for <0>Chrome</0>"
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:129
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:114
 msgid "student.codes for <0>Firefox</0>"
 msgstr "student.codes for <0>Firefox</0>"
 
