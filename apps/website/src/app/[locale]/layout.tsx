@@ -34,6 +34,7 @@ export default async function RootLayout({
           ['ar', 'fa', 'he', 'ur', 'ps'].includes(say.locale) ? 'rtl' : 'ltr'
         }
         className="dark"
+        suppressHydrationWarning
       >
         <head key="head">
           <meta name="evaluate-extension" content="disabled" />
@@ -53,6 +54,7 @@ export default async function RootLayout({
             inter.className,
             'flex min-h-screen flex-col overflow-y-scroll',
           )}
+          suppressHydrationWarning
         >
           <BodyProviders {...say}>
             <Header />

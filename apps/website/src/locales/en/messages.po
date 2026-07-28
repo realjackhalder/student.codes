@@ -236,7 +236,7 @@ msgstr "The <0>student.codes</0> Discord Bot"
 msgid "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
 msgstr "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
 
-#: src/app/[locale]/(products)/products/discord-bot/page.tsx:37
+#: src/app/[locale]/(products)/products/discord-bot/page.tsx:38
 msgid "student.codes for <0>Discord</0>"
 msgstr "student.codes for <0>Discord</0>"
 
@@ -244,15 +244,15 @@ msgstr "student.codes for <0>Discord</0>"
 msgid "The <0>student.codes</0> Browser Extension"
 msgstr "The <0>student.codes</0> Browser Extension"
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:16
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:17
 msgid "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 msgstr "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:42
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:43
 msgid "student.codes for <0>Chrome</0>"
 msgstr "student.codes for <0>Chrome</0>"
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:128
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:129
 msgid "student.codes for <0>Firefox</0>"
 msgstr "student.codes for <0>Firefox</0>"
 
