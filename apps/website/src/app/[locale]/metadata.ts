@@ -20,6 +20,14 @@ export async function generateBaseMetadata(
         say`online compiler`,
         say`online interpreter`,
       ],
+      icons: {
+        icon: [
+          { url: '/favicon.ico', sizes: 'any' },
+          { url: '/images/icon.png', type: 'image/png' },
+        ],
+        shortcut: '/favicon.ico',
+        apple: '/images/icon.png',
+      },
     } satisfies Metadata,
     overrides?.(say) ?? {},
   );
