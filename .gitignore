@@ -8,3 +8,5 @@ dist/
 .env*.local
 messages.json
 sitemap.xml
+.DS_Store
+.pnpm-store/
