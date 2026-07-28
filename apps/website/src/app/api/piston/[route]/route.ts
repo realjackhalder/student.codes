@@ -19,12 +19,47 @@ function withOriginCheck(
   return async (req: NextRequest, ctx: RouteContext<'/api/piston/[route]'>) => {
     const origin = req.headers.get('origin');
     const host = req.headers.get('host');
-    if (!origin) return handler(req, ctx);
-    const allowed = env.ALLOWED_ORIGIN.some((o) => matchOrigin(origin, o));
-    if (!allowed && host && !origin.includes(host)) {
+    let isAllowed = false;
+
+    if (!origin) {
+      isAllowed = true;
+    } else {
+      isAllowed = env.ALLOWED_ORIGIN.some((o) => matchOrigin(origin, o));
+      if (!isAllowed && host && origin.includes(host)) {
+        isAllowed = true;
+      }
+    }
+
+    if (!isAllowed) {
       return new Response(null, { status: 403 });
     }
-    return handler(req, ctx);
+
+    if (req.method === 'OPTIONS') {
+      const headers = new Headers();
+      if (origin) {
+        headers.set('Access-Control-Allow-Origin', origin);
+        headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        headers.set(
+          'Access-Control-Allow-Headers',
+          'Content-Type, Authorization',
+        );
+      }
+      return new Response(null, { status: 204, headers });
+    }
+
+    const response = await handler(req, ctx);
+    if (origin) {
+      response.headers.set('Access-Control-Allow-Origin', origin);
+      response.headers.set(
+        'Access-Control-Allow-Methods',
+        'GET, POST, OPTIONS',
+      );
+      response.headers.set(
+        'Access-Control-Allow-Headers',
+        'Content-Type, Authorization',
+      );
+    }
+    return response;
   };
 }
 
