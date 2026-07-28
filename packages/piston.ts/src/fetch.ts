@@ -8,7 +8,9 @@ export async function betterFetch(input: RequestInfo, init?: RequestInit) {
 
     if (error) {
       console.error(error);
-      throw new Error('An unknown error occurred', { cause: error });
+      throw new Error(`Fetch failed: ${error.message || String(error)}`, {
+        cause: error,
+      });
     }
 
     if (response.ok) {
@@ -29,6 +31,9 @@ export async function betterFetch(input: RequestInfo, init?: RequestInit) {
       continue;
     }
 
-    throw new Error('An unknown error occurred', { cause: response });
+    throw new Error(
+      `Server returned ${response.status} ${response.statusText}`,
+      { cause: response },
+    );
   }
 }
