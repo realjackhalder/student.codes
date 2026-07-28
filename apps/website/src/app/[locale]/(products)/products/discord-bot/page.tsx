@@ -30,7 +30,7 @@ export default function BrowserExtensionPlatformContent() {
           <Link href="/go/discord-bot" target="_blank">
             {/** biome-ignore lint/performance/noImgElement: Want to use img */}
             <img
-              src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"
+              src="/images/browsers/discord.svg"
               className="w-6"
               alt="Discord Logo"
             />
