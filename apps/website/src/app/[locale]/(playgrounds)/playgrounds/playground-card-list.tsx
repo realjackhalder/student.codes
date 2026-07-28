@@ -10,7 +10,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@evaluate/components/select';
-import { Separator } from '@evaluate/components/separator';
 import { toast } from '@evaluate/components/toast';
 import { Say, useSay } from '@sayable/react';
 import {
@@ -135,23 +134,8 @@ export function PlaygroundCardList({
         </Select>
       </div>
 
-      {pinnedRuntimes.length > 0 && (
-        <>
-          <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-            {pinnedRuntimes.map((runtime) => (
-              <PlaygroundCard
-                key={runtime.id}
-                runtime={runtime}
-                hash={hash || undefined}
-              />
-            ))}
-          </div>
-          <Separator />
-        </>
-      )}
-
       <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-        {sortedRuntimes.map((runtime) => (
+        {[...pinnedRuntimes, ...sortedRuntimes].map((runtime) => (
           <PlaygroundCard
             key={runtime.id}
             runtime={runtime}
