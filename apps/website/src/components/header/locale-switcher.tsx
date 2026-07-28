@@ -42,6 +42,10 @@ export function LocaleSwitcher() {
   );
 }
 
+const LOCALE_DISPLAY_NAMES: Record<string, string> = {
+  my: 'မြန်မာ',
+};
+
 function LocaleSwitcherItem({ locale, ...props }: { locale: string }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -58,6 +62,10 @@ function LocaleSwitcherItem({ locale, ...props }: { locale: string }) {
     document.cookie = `preferred-locale=${locale}; max-age=31536000; path=/`;
   }, [locale]);
 
+  const displayName =
+    LOCALE_DISPLAY_NAMES[locale] ??
+    new Intl.DisplayNames([locale], { type: 'language' }).of(locale);
+
   return (
     <Link
       href={localisedHref}
@@ -68,7 +76,7 @@ function LocaleSwitcherItem({ locale, ...props }: { locale: string }) {
         window.location.href = localisedHref;
       }}
     >
-      {new Intl.DisplayNames([locale], { type: 'language' }).of(locale)}
+      {displayName}
     </Link>
   );
 }
