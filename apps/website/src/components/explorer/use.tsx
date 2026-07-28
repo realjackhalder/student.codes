@@ -3,26 +3,29 @@
 import { toast } from '@evaluate/components/toast';
 import { useEventListener } from '@evaluate/hooks/event-listener';
 import { useSay } from '@sayable/react';
+import { useSearchParams } from 'next/navigation';
 import {
   ExecuteOptions,
   type FilesOptions,
   getRuntimeExamples,
   type Runtime,
 } from 'piston.ts';
-
-import { compress, decompress } from 'piston.ts/evaluate';
 import {
   createContext,
   useCallback,
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { File, Folder } from 'virtual-file-explorer-backend';
 import { useHashFragment } from '~/hooks/hash-fragment';
+import { getChallenge } from '~/lib/challenges';
+import { getLibraryProject } from '~/lib/library';
+import { decodeSharedProject, makeSharedUrl } from '~/lib/share';
 
 export const ExplorerContext = //
   createContext<Folder<true>>(null!);
@@ -39,16 +42,40 @@ export function ExplorerProvider({
   const say = useSay();
 
   const [hash, setHash] = useHashFragment();
+  const searchParams = useSearchParams();
+  const invalidShareToast = useRef<string | undefined>(undefined);
   const example = useMemo(
     () => getRuntimeExamples(runtime.id)?.[0],
     [runtime.id],
   );
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: Only want triggered once
+  useEffect(() => {
+    const invalid =
+      hash &&
+      !getLibraryProject(searchParams.get('library')) &&
+      !decodeSharedProject(hash);
+    if (invalid && invalidShareToast.current !== hash) {
+      invalidShareToast.current = hash;
+      toast.error(say`This shared playground link is invalid or too large.`);
+    }
+    if (!invalid) invalidShareToast.current = undefined;
+  }, [hash, say, searchParams]);
+
   const root = useMemo(() => {
     let root: Folder<true>;
-    if (hash) root = decodeExplorer(hash);
-    else if (example) root = optionsToFolder(example);
+    const project = getLibraryProject(searchParams.get('library'));
+    const challenge = getChallenge(searchParams.get('challenge'));
+    if (project?.runtimeId === runtime.id) root = optionsToFolder(project);
+    else if (challenge?.runtimeId === runtime.id)
+      root = optionsToFolder(challenge.starter);
+    else if (hash) {
+      const shared = decodeSharedProject(hash);
+      if (shared) root = optionsToFolder(shared);
+      else
+        root = example
+          ? optionsToFolder(example)
+          : new Folder<true>('::root::');
+    } else if (example) root = optionsToFolder(example);
     else root = new Folder<true>('::root::');
 
     if (!root.children.some((c) => c.name === '::args::'))
@@ -58,14 +85,17 @@ export function ExplorerProvider({
 
     root.select().expand();
     return root;
-  }, []);
+  }, [hash, example, runtime.id, searchParams]);
 
   const saveAndCopyUrl = useCallback(
     (e: Event) => {
       e.preventDefault();
-      setHash(encodeExplorer(root));
-      navigator.clipboard.writeText(location.href);
-      toast.info(say`Saved and copied URL to clipboard`);
+      const url = makeSharedUrl(folderToOptions(root));
+      setHash(new URL(url).hash.slice(1));
+      navigator.clipboard
+        .writeText(url)
+        .then(() => toast.info(say`Share link copied to clipboard`))
+        .catch(() => toast.error(say`Could not copy the share link`));
     },
     [say, setHash, root],
   );
@@ -108,17 +138,7 @@ export function useWatch(
 
 //
 
-function encodeExplorer(explorer: Folder) {
-  if (explorer.children.length === 0) return '';
-  return compress(folderToOptions(explorer));
-}
-
-function decodeExplorer(hash: string) {
-  if (!hash) return new Folder<true>('::root::');
-  return optionsToFolder(decompress(hash));
-}
-
-function folderToOptions(folder: Folder) {
+export function folderToOptions(folder: Folder) {
   const files: Record<string, string> = {};
   let entry: string | undefined;
   let focused: string | undefined;

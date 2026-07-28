@@ -16,7 +16,10 @@ import {
   PlayIcon,
   Trash2Icon,
 } from 'lucide-react';
+import { useSearchParams } from 'next/navigation';
 import type { Runtime } from 'piston.ts';
+import { getChallenge } from '~/lib/challenges';
+import { ChallengeChecks } from '../challenges/checks';
 import { ReadonlyEditor } from '../editor/readonly';
 import { HtmlPreview } from './html-preview';
 import { useTerminal } from './use';
@@ -75,6 +78,8 @@ export function Terminal({ runtime }: Terminal.Props) {
                 </span>
               </Button>
             </TabsTrigger>
+
+            <ChallengeChecksTab runtime={runtime} />
 
             <Button
               variant="secondary"
@@ -160,7 +165,26 @@ export function Terminal({ runtime }: Terminal.Props) {
             </div>
           )}
         </TabsContent>
+
+        <TabsContent value="checks" className="mt-0 h-full">
+          <ChallengeChecks runtime={runtime} />
+        </TabsContent>
       </Tabs>
     </section>
+  );
+}
+
+function ChallengeChecksTab({ runtime }: Terminal.Props) {
+  const challenge = getChallenge(useSearchParams().get('challenge'));
+  if (!challenge || challenge.runtimeId !== runtime.id) return null;
+  return (
+    <TabsTrigger value="checks" asChild>
+      <Button
+        className="bg-card text-foreground/70 hover:text-foreground data-[state=active]:bg-muted data-[state=active]:text-foreground"
+        variant="secondary"
+      >
+        <Say>Checks</Say>
+      </Button>
+    </TabsTrigger>
   );
 }

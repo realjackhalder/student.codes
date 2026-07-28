@@ -1,0 +1,59 @@
+#!/usr/bin/env node
+
+import { spawn } from 'node:child_process';
+
+const commands = [
+  { label: 'shared packages', args: ['run', 'dev:packages'] },
+  { label: 'website', args: ['--filter', 'website', 'run', 'dev'] },
+];
+
+const children = commands.map(({ label, args }) => {
+  console.log(`\n[student.codes] Starting ${label}...`);
+
+  return spawnPnpm(args);
+});
+
+let isStopping = false;
+let exitCode = 0;
+
+for (const child of children) {
+  child.on('error', () => stop(1));
+
+  child.on('exit', (code, signal) => {
+    if (!isStopping) {
+      stop(code ?? (signal ? 1 : 0));
+      return;
+    }
+
+    if (
+      children.every(
+        (process) => process.exitCode !== null || process.signalCode !== null,
+      )
+    ) {
+      process.exit(exitCode);
+    }
+  });
+}
+
+process.on('SIGINT', () => stop(130));
+process.on('SIGTERM', () => stop(143));
+
+function spawnPnpm(args) {
+  return spawn('corepack', ['pnpm', ...args], {
+    env: process.env,
+    stdio: 'inherit',
+  });
+}
+
+function stop(code) {
+  if (isStopping) return;
+
+  isStopping = true;
+  exitCode = code;
+
+  for (const child of children) {
+    if (child.exitCode === null) child.kill('SIGTERM');
+  }
+
+  setTimeout(() => process.exit(exitCode), 5_000).unref();
+}

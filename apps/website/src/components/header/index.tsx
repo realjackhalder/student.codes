@@ -51,6 +51,18 @@ export function Header() {
             </LocalisedLink>
           </Button>
 
+          <Button variant="ghost" onClick={closeByLink} asChild>
+            <LocalisedLink href="/library">
+              <Say>My Library</Say>
+            </LocalisedLink>
+          </Button>
+
+          <Button variant="ghost" onClick={closeByLink} asChild>
+            <LocalisedLink href="/courses/github">
+              <Say>Git Course</Say>
+            </LocalisedLink>
+          </Button>
+
           <Button
             variant="ghost"
             onClick={closeByLink}

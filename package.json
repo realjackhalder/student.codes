@@ -9,8 +9,9 @@
     "build": "turbo run build",
     "build:packages": "turbo run build --filter=\"./packages/*\"",
     "dev": "pnpm run \"/dev:.*/\"",
-    "dev:packages": "turbo watch build --filter=\"./packages/*\"",
+    "dev:packages": "pnpm --parallel --stream --filter @evaluate/components --filter @evaluate/hooks --filter @evaluate/logger --filter piston.ts --filter virtual-file-explorer-backend run build --watch",
     "dev:apps": "turbo run dev --filter=\"./apps/*\"",
+    "dev:website": "node packages/scripts/bin/dev-website",
     "prepare": "husky & ts-patch install",
     "graph": "pnpx nx@18 graph"
   },

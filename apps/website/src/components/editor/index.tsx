@@ -3,15 +3,18 @@
 import { Button } from '@evaluate/components/button';
 import { ScrollArea, ScrollBar } from '@evaluate/components/scroll-area';
 import { useEventListener } from '@evaluate/hooks/event-listener';
+import { Say, useSay } from '@sayable/react';
 import { FilesIcon, Share2Icon, TerminalIcon } from 'lucide-react';
 import type { Runtime } from 'piston.ts';
 import { useCallback, useEffect, useRef } from 'react';
 import { twMerge as cn } from 'tailwind-merge';
+import { SaveToLibraryButton } from '../library/save-button';
 import { ExecuteBar } from './execute-bar';
 import { useEditor } from './hooks';
 import { OpenedFiles } from './opened-files';
 
 export function Editor({ runtime }: { runtime: typeof Runtime._output }) {
+  const say = useSay();
   const editorRef = useRef<HTMLDivElement>(null);
   const { file, handlers, setContainer } = useEditor();
   useEffect(() => setContainer(editorRef.current!), [setContainer]);
@@ -44,9 +47,15 @@ export function Editor({ runtime }: { runtime: typeof Runtime._output }) {
             variant="secondary"
             className="ml-auto aspect-square p-0"
             onClick={handlers.share}
+            title={say`Copy share link`}
           >
             <Share2Icon size={16} strokeWidth={2} />
+            <span className="sr-only">
+              <Say>Copy share link</Say>
+            </span>
           </Button>
+
+          <SaveToLibraryButton runtime={runtime} />
 
           <Button
             variant="secondary"

@@ -1,5 +1,10 @@
+import { Button } from '@evaluate/components/button';
 import { Say } from '@sayable/react';
+import { ArrowRightIcon, GitBranchIcon } from 'lucide-react';
+import { DailyChallenge } from '~/components/challenges/daily-challenge';
+import { LocalisedLink } from '~/components/localised-link';
 import say from '~/i18n';
+import { githubCourseRoutes } from '~/lib/github-learning/navigation';
 import piston from '~/services/piston';
 import { generateBaseMetadata } from '../../metadata';
 import { PlaygroundCardList } from './playground-card-list';
@@ -31,6 +36,32 @@ export default async function PlaygroundsPage() {
           </span>
         </p>
       </div>
+
+      <DailyChallenge compact />
+
+      <section className="flex flex-col gap-4 rounded-xl border bg-card p-6 sm:flex-row sm:items-center">
+        <GitBranchIcon
+          aria-hidden="true"
+          className="size-9 shrink-0 text-primary"
+        />
+        <div className="min-w-0 flex-1">
+          <h2 className="font-semibold text-xl">
+            <Say>Learn Git visually</Say>
+          </h2>
+          <p className="mt-1 text-muted-foreground text-sm">
+            <Say>
+              Practice branches and commands safely in an interactive simulated
+              repository.
+            </Say>
+          </p>
+        </div>
+        <Button asChild>
+          <LocalisedLink href={githubCourseRoutes.overview}>
+            <Say>Explore course</Say>
+            <ArrowRightIcon aria-hidden="true" />
+          </LocalisedLink>
+        </Button>
+      </section>
 
       <PlaygroundCardList initialRuntimes={runtimes} />
     </div>

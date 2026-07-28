@@ -6,68 +6,913 @@ msgstr ""
 "Language: en\n"
 "X-Generator: sayable\n"
 
+#: src/lib/github-learning/lessons.ts:80
+#: src/app/[locale]/(courses)/courses/github/layout.tsx:15
+msgid "Git & GitHub"
+msgstr "Git & GitHub"
+
+#: src/lib/github-learning/lessons.ts:81
+msgid "Learn Git fundamentals, visual branching, practical GitHub collaboration, and safe publishing through Development, UAT, and Production."
+msgstr "Learn Git fundamentals, visual branching, practical GitHub collaboration, and safe publishing through Development, UAT, and Production."
+
+#: src/lib/github-learning/lessons.ts:86
+msgid "Git foundations"
+msgstr "Git foundations"
+
+#: src/lib/github-learning/lessons.ts:87
+msgid "Understand repositories, changes, staging, commits, and history."
+msgstr "Understand repositories, changes, staging, commits, and history."
+
+#: src/lib/github-learning/lessons.ts:91
+msgid "How Git thinks"
+msgstr "How Git thinks"
+
+#: src/lib/github-learning/lessons.ts:92
+msgid "Understand snapshots, repositories, and the three places where your work can live."
+msgstr "Understand snapshots, repositories, and the three places where your work can live."
+
+#: src/lib/github-learning/lessons.ts:97
+msgid "Git records snapshots of a project. Your working tree contains current files, the staging area selects the next snapshot, and commits preserve completed snapshots in history."
+msgstr "Git records snapshots of a project. Your working tree contains current files, the staging area selects the next snapshot, and commits preserve completed snapshots in history."
+
+#: src/lib/github-learning/lessons.ts:102
+msgid "Ask Git where your files are in the working tree and staging workflow."
+msgstr "Ask Git where your files are in the working tree and staging workflow."
+
+#: src/lib/github-learning/lessons.ts:107
+msgid "Think of Git as a timeline you intentionally build, not as an automatic backup service."
+msgstr "Think of Git as a timeline you intentionally build, not as an automatic backup service."
+
+#: src/lib/github-learning/lessons.ts:114
+msgid "Inspect your work"
+msgstr "Inspect your work"
+
+#: src/lib/github-learning/lessons.ts:115
+msgid "Read repository status before deciding what to do next."
+msgstr "Read repository status before deciding what to do next."
+
+#: src/lib/github-learning/lessons.ts:120
+msgid "A clean status means tracked files match the current commit. Modified, deleted, and untracked files are working-tree changes that are not yet part of a commit."
+msgstr "A clean status means tracked files match the current commit. Modified, deleted, and untracked files are working-tree changes that are not yet part of a commit."
+
+#: src/lib/github-learning/lessons.ts:125
+msgid "Display the current branch and summarize staged and unstaged changes."
+msgstr "Display the current branch and summarize staged and unstaged changes."
+
+#: src/lib/github-learning/lessons.ts:130
+msgid "Run status often. It is a safe, read-only command and one of the best ways to stay oriented."
+msgstr "Run status often. It is a safe, read-only command and one of the best ways to stay oriented."
+
+#: src/lib/github-learning/lessons.ts:137
+msgid "Stage changes"
+msgstr "Stage changes"
+
+#: src/lib/github-learning/lessons.ts:138
+msgid "Select exactly which file changes belong in the next commit."
+msgstr "Select exactly which file changes belong in the next commit."
+
+#: src/lib/github-learning/lessons.ts:143
+msgid "The staging area lets you prepare a focused commit. Staging a file copies its current change into the proposed snapshot without changing the file itself."
+msgstr "The staging area lets you prepare a focused commit. Staging a file copies its current change into the proposed snapshot without changing the file itself."
+
+#: src/lib/github-learning/lessons.ts:148
+msgid "Stage the current README change for the next commit."
+msgstr "Stage the current README change for the next commit."
+
+#: src/lib/github-learning/lessons.ts:153
+msgid "Review status after staging so unrelated changes do not accidentally enter the same commit."
+msgstr "Review status after staging so unrelated changes do not accidentally enter the same commit."
+
+#: src/lib/github-learning/lessons.ts:159
+msgid "Prepare notes for a commit"
+msgstr "Prepare notes for a commit"
+
+#: src/lib/github-learning/lessons.ts:161
+msgid "Inspect the repository status."
+msgstr "Inspect the repository status."
+
+#: src/lib/github-learning/lessons.ts:162
+msgid "Stage notes.md without committing it."
+msgstr "Stage notes.md without committing it."
+
+#: src/lib/github-learning/lessons.ts:164
+msgid "Use git add followed by the file path."
+msgstr "Use git add followed by the file path."
+
+#: src/lib/github-learning/lessons.ts:178
+msgid "Create meaningful commits"
+msgstr "Create meaningful commits"
+
+#: src/lib/github-learning/lessons.ts:179
+msgid "Save a focused snapshot with a useful message."
+msgstr "Save a focused snapshot with a useful message."
+
+#: src/lib/github-learning/lessons.ts:184
+msgid "A commit stores the staged snapshot, its author, a message, and a link to its parent. Small, focused commits are easier to review and undo."
+msgstr "A commit stores the staged snapshot, its author, a message, and a link to its parent. Small, focused commits are easier to review and undo."
+
+#: src/lib/github-learning/lessons.ts:189
+msgid "Create a commit from staged changes with a concise action-oriented message."
+msgstr "Create a commit from staged changes with a concise action-oriented message."
+
+#: src/lib/github-learning/lessons.ts:194
+msgid "A helpful commit message explains why the project changed, not only which files changed."
+msgstr "A helpful commit message explains why the project changed, not only which files changed."
+
+#: src/lib/github-learning/lessons.ts:200
+msgid "Commit the staged notes"
+msgstr "Commit the staged notes"
+
+#: src/lib/github-learning/lessons.ts:202
+msgid "Confirm that notes.md is staged."
+msgstr "Confirm that notes.md is staged."
+
+#: src/lib/github-learning/lessons.ts:203
+msgid "Create a commit with a clear message."
+msgstr "Create a commit with a clear message."
+
+#: src/lib/github-learning/lessons.ts:205
+#: src/lib/github-learning/lessons.ts:679
+msgid "Use git commit with the -m message option."
+msgstr "Use git commit with the -m message option."
+
+#: src/lib/github-learning/lessons.ts:218
+msgid "History and branches"
+msgstr "History and branches"
+
+#: src/lib/github-learning/lessons.ts:219
+msgid "Explore history and develop work safely on parallel branches."
+msgstr "Explore history and develop work safely on parallel branches."
+
+#: src/lib/github-learning/lessons.ts:223
+msgid "Read project history"
+msgstr "Read project history"
+
+#: src/lib/github-learning/lessons.ts:224
+msgid "Follow commits and understand parent relationships."
+msgstr "Follow commits and understand parent relationships."
+
+#: src/lib/github-learning/lessons.ts:229
+msgid "Commit history is a chain of snapshots. Each normal commit points to its parent, allowing Git to reconstruct how the project developed."
+msgstr "Commit history is a chain of snapshots. Each normal commit points to its parent, allowing Git to reconstruct how the project developed."
+
+#: src/lib/github-learning/lessons.ts:234
+msgid "List commits from the current branch tip backward through its parents."
+msgstr "List commits from the current branch tip backward through its parents."
+
+#: src/lib/github-learning/lessons.ts:239
+msgid "Commit identifiers are content-based references. A short identifier is usually enough for local discussion."
+msgstr "Commit identifiers are content-based references. A short identifier is usually enough for local discussion."
+
+#: src/lib/github-learning/lessons.ts:246
+msgid "Create branches"
+msgstr "Create branches"
+
+#: src/lib/github-learning/lessons.ts:247
+msgid "Create a lightweight name for an independent line of work."
+msgstr "Create a lightweight name for an independent line of work."
+
+#: src/lib/github-learning/lessons.ts:252
+msgid "A branch is a movable name pointing to a commit. New commits advance the current branch while other branches remain at their previous commits."
+msgstr "A branch is a movable name pointing to a commit. New commits advance the current branch while other branches remain at their previous commits."
+
+#: src/lib/github-learning/lessons.ts:257
+msgid "Create a feature branch at the current commit without switching to it."
+msgstr "Create a feature branch at the current commit without switching to it."
+
+#: src/lib/github-learning/lessons.ts:262
+msgid "Use short descriptive branch names such as feature/profile-card or fix/login-timeout."
+msgstr "Use short descriptive branch names such as feature/profile-card or fix/login-timeout."
+
+#: src/lib/github-learning/lessons.ts:268
+msgid "Create a feature branch"
+msgstr "Create a feature branch"
+
+#: src/lib/github-learning/lessons.ts:270
+msgid "Create a branch named feature at the current commit."
+msgstr "Create a branch named feature at the current commit."
+
+#: src/lib/github-learning/lessons.ts:271
+msgid "Stay on the main branch after creating it."
+msgstr "Stay on the main branch after creating it."
+
+#: src/lib/github-learning/lessons.ts:273
+msgid "Use git branch followed by the new branch name."
+msgstr "Use git branch followed by the new branch name."
+
+#: src/lib/github-learning/lessons.ts:284
+msgid "Switch branches"
+msgstr "Switch branches"
+
+#: src/lib/github-learning/lessons.ts:285
+msgid "Move HEAD between branches and understand which branch receives new commits."
+msgstr "Move HEAD between branches and understand which branch receives new commits."
+
+#: src/lib/github-learning/lessons.ts:290
+msgid "HEAD identifies your current location. When HEAD points to a branch, the next commit advances that branch."
+msgstr "HEAD identifies your current location. When HEAD points to a branch, the next commit advances that branch."
+
+#: src/lib/github-learning/lessons.ts:295
+msgid "Create a branch named feature and switch to it in one command."
+msgstr "Create a branch named feature and switch to it in one command."
+
+#: src/lib/github-learning/lessons.ts:300
+msgid "Commit or safely store unfinished changes before switching when those changes conflict with the destination branch."
+msgstr "Commit or safely store unfinished changes before switching when those changes conflict with the destination branch."
+
+#: src/lib/github-learning/lessons.ts:306
+msgid "Move to the feature branch"
+msgstr "Move to the feature branch"
+
+#: src/lib/github-learning/lessons.ts:308
+msgid "Inspect the available branches."
+msgstr "Inspect the available branches."
+
+#: src/lib/github-learning/lessons.ts:309
+msgid "Switch from main to the existing feature branch."
+msgstr "Switch from main to the existing feature branch."
+
+#: src/lib/github-learning/lessons.ts:311
+msgid "Use git switch followed by feature."
+msgstr "Use git switch followed by feature."
+
+#: src/lib/github-learning/lessons.ts:323
+msgid "GitHub collaboration"
+msgstr "GitHub collaboration"
+
+#: src/lib/github-learning/lessons.ts:324
+msgid "Connect local history to remotes, share branches, and collaborate through pull requests."
+msgstr "Connect local history to remotes, share branches, and collaborate through pull requests."
+
+#: src/lib/github-learning/lessons.ts:328
+msgid "Understand remotes"
+msgstr "Understand remotes"
+
+#: src/lib/github-learning/lessons.ts:329
+msgid "Understand how local repositories refer to shared repositories."
+msgstr "Understand how local repositories refer to shared repositories."
+
+#: src/lib/github-learning/lessons.ts:334
+msgid "A remote is a named connection to another Git repository. The conventional name origin usually identifies the repository you cloned."
+msgstr "A remote is a named connection to another Git repository. The conventional name origin usually identifies the repository you cloned."
+
+#: src/lib/github-learning/lessons.ts:339
+msgid "List remote names and the URLs used to exchange repository data."
+msgstr "List remote names and the URLs used to exchange repository data."
+
+#: src/lib/github-learning/lessons.ts:344
+msgid "Bring newer commits from origin/main into the current local branch."
+msgstr "Bring newer commits from origin/main into the current local branch."
+
+#: src/lib/github-learning/lessons.ts:349
+msgid "A GitHub repository is a remote Git repository plus collaboration features such as issues, reviews, and pull requests."
+msgstr "A GitHub repository is a remote Git repository plus collaboration features such as issues, reviews, and pull requests."
+
+#: src/lib/github-learning/lessons.ts:355
+msgid "Pull remote work"
+msgstr "Pull remote work"
+
+#: src/lib/github-learning/lessons.ts:357
+msgid "Notice that local main is one commit behind origin/main."
+msgstr "Notice that local main is one commit behind origin/main."
+
+#: src/lib/github-learning/lessons.ts:358
+msgid "Pull origin/main into your local main branch."
+msgstr "Pull origin/main into your local main branch."
+
+#: src/lib/github-learning/lessons.ts:359
+msgid "Confirm that the package arrives on the local computer and main reaches the latest commit."
+msgstr "Confirm that the package arrives on the local computer and main reaches the latest commit."
+
+#: src/lib/github-learning/lessons.ts:362
+msgid "Use git pull followed by the remote and branch names."
+msgstr "Use git pull followed by the remote and branch names."
+
+#: src/lib/github-learning/lessons.ts:382
+msgid "Share branches"
+msgstr "Share branches"
+
+#: src/lib/github-learning/lessons.ts:383
+msgid "Publish a local branch to a remote repository."
+msgstr "Publish a local branch to a remote repository."
+
+#: src/lib/github-learning/lessons.ts:388
+msgid "Pushing transfers commits and updates a branch reference on the remote. It does not upload arbitrary working-tree files that have not been committed."
+msgstr "Pushing transfers commits and updates a branch reference on the remote. It does not upload arbitrary working-tree files that have not been committed."
+
+#: src/lib/github-learning/lessons.ts:393
+msgid "Publish the local feature branch to the simulated origin remote."
+msgstr "Publish the local feature branch to the simulated origin remote."
+
+#: src/lib/github-learning/lessons.ts:398
+msgid "Never commit tokens, passwords, private keys, or environment secrets before pushing."
+msgstr "Never commit tokens, passwords, private keys, or environment secrets before pushing."
+
+#: src/lib/github-learning/lessons.ts:404
+msgid "Publish the feature branch"
+msgstr "Publish the feature branch"
+
+#: src/lib/github-learning/lessons.ts:406
+msgid "Confirm that feature is the current branch."
+msgstr "Confirm that feature is the current branch."
+
+#: src/lib/github-learning/lessons.ts:407
+msgid "Push feature to the origin remote."
+msgstr "Push feature to the origin remote."
+
+#: src/lib/github-learning/lessons.ts:409
+msgid "Provide both the remote and branch to git push."
+msgstr "Provide both the remote and branch to git push."
+
+#: src/lib/github-learning/lessons.ts:423
+msgid "Submit code"
+msgstr "Submit code"
+
+#: src/lib/github-learning/lessons.ts:424
+msgid "Commit work on a focused branch and publish it for review on GitHub."
+msgstr "Commit work on a focused branch and publish it for review on GitHub."
+
+#: src/lib/github-learning/lessons.ts:429
+msgid "A commit always advances the branch currently checked out. To submit work safely, switch to a feature branch, stage and commit the intended files, then push that branch to GitHub."
+msgstr "A commit always advances the branch currently checked out. To submit work safely, switch to a feature branch, stage and commit the intended files, then push that branch to GitHub."
+
+#: src/lib/github-learning/lessons.ts:434
+msgid "Create and check out a focused branch before changing shared history."
+msgstr "Create and check out a focused branch before changing shared history."
+
+#: src/lib/github-learning/lessons.ts:439
+msgid "Stage only the new greeting file for this commit."
+msgstr "Stage only the new greeting file for this commit."
+
+#: src/lib/github-learning/lessons.ts:444
+msgid "Record the staged code on the currently checked-out feature branch."
+msgstr "Record the staged code on the currently checked-out feature branch."
+
+#: src/lib/github-learning/lessons.ts:449
+msgid "Publish the branch and connect it to its matching origin branch."
+msgstr "Publish the branch and connect it to its matching origin branch."
+
+#: src/lib/github-learning/lessons.ts:454
+msgid "After pushing, open a pull request on GitHub so teammates can review the branch before it is merged into main."
+msgstr "After pushing, open a pull request on GitHub so teammates can review the branch before it is merged into main."
+
+#: src/lib/github-learning/lessons.ts:460
+msgid "Publish a branch"
+msgstr "Publish a branch"
+
+#: src/lib/github-learning/lessons.ts:462
+msgid "Confirm that feature/github-submit is the current branch."
+msgstr "Confirm that feature/github-submit is the current branch."
+
+#: src/lib/github-learning/lessons.ts:463
+msgid "Stage src/greeting.ts and commit it with a clear message."
+msgstr "Stage src/greeting.ts and commit it with a clear message."
+
+#: src/lib/github-learning/lessons.ts:464
+msgid "Push feature/github-submit to origin with an upstream connection."
+msgstr "Push feature/github-submit to origin with an upstream connection."
+
+#: src/lib/github-learning/lessons.ts:467
+msgid "Use git add before git commit."
+msgstr "Use git add before git commit."
+
+#: src/lib/github-learning/lessons.ts:468
+msgid "Use git push -u origin followed by the current branch name."
+msgstr "Use git push -u origin followed by the current branch name."
+
+#: src/lib/github-learning/lessons.ts:490
+msgid "Pull requests"
+msgstr "Pull requests"
+
+#: src/lib/github-learning/lessons.ts:491
+msgid "Use a pull request to explain, review, and merge a branch."
+msgstr "Use a pull request to explain, review, and merge a branch."
+
+#: src/lib/github-learning/lessons.ts:496
+msgid "A pull request proposes merging one branch into another. It creates a shared place for context, automated checks, discussion, and code review."
+msgstr "A pull request proposes merging one branch into another. It creates a shared place for context, automated checks, discussion, and code review."
+
+#: src/lib/github-learning/lessons.ts:501
+msgid "In a real authenticated repository, GitHub CLI can open a pull request for your published branch."
+msgstr "In a real authenticated repository, GitHub CLI can open a pull request for your published branch."
+
+#: src/lib/github-learning/lessons.ts:506
+msgid "Keep pull requests focused, explain the reason for the change, and include clear verification steps."
+msgstr "Keep pull requests focused, explain the reason for the change, and include clear verification steps."
+
+#: src/lib/github-learning/lessons.ts:515
+msgid "Everyday workflow"
+msgstr "Everyday workflow"
+
+#: src/lib/github-learning/lessons.ts:516
+msgid "Review collaboration changes and build a safe daily Git routine."
+msgstr "Review collaboration changes and build a safe daily Git routine."
+
+#: src/lib/github-learning/lessons.ts:520
+msgid "Review and merge"
+msgstr "Review and merge"
+
+#: src/lib/github-learning/lessons.ts:521
+msgid "Evaluate a pull request and choose a clear merge strategy."
+msgstr "Evaluate a pull request and choose a clear merge strategy."
+
+#: src/lib/github-learning/lessons.ts:526
+msgid "Review checks behavior, clarity, tests, and security rather than only scanning changed lines. Resolve important feedback before merging."
+msgstr "Review checks behavior, clarity, tests, and security rather than only scanning changed lines. Resolve important feedback before merging."
+
+#: src/lib/github-learning/lessons.ts:531
+msgid "Inspect the resulting commit history after a branch is merged."
+msgstr "Inspect the resulting commit history after a branch is merged."
+
+#: src/lib/github-learning/lessons.ts:536
+msgid "Merge commits preserve branch structure, squash merges create one focused commit, and rebase merges produce a linear history."
+msgstr "Merge commits preserve branch structure, squash merges create one focused commit, and rebase merges produce a linear history."
+
+#: src/lib/github-learning/lessons.ts:543
+msgid "Daily workflow"
+msgstr "Daily workflow"
+
+#: src/lib/github-learning/lessons.ts:544
+msgid "Combine inspection, focused commits, branches, and review into a repeatable routine."
+msgstr "Combine inspection, focused commits, branches, and review into a repeatable routine."
+
+#: src/lib/github-learning/lessons.ts:549
+msgid "Start by checking status, create a focused branch, make and review changes, stage intentionally, commit clearly, push the branch, and open a pull request."
+msgstr "Start by checking status, create a focused branch, make and review changes, stage intentionally, commit clearly, push the branch, and open a pull request."
+
+#: src/lib/github-learning/lessons.ts:554
+msgid "Begin and end work by confirming your branch and the state of your working tree."
+msgstr "Begin and end work by confirming your branch and the state of your working tree."
+
+#: src/lib/github-learning/lessons.ts:559
+msgid "Before destructive recovery commands, stop and inspect status and history. Preserve work on a branch or commit whenever possible."
+msgstr "Before destructive recovery commands, stop and inspect status and history. Preserve work on a branch or commit whenever possible."
+
+#: src/lib/github-learning/lessons.ts:565
+msgid "Practice a safe branch workflow"
+msgstr "Practice a safe branch workflow"
+
+#: src/lib/github-learning/lessons.ts:567
+msgid "Create and switch to a branch named daily-work."
+msgstr "Create and switch to a branch named daily-work."
+
+#: src/lib/github-learning/lessons.ts:568
+msgid "Publish daily-work to origin."
+msgstr "Publish daily-work to origin."
+
+#: src/lib/github-learning/lessons.ts:569
+msgid "Finish with a clean working tree."
+msgstr "Finish with a clean working tree."
+
+#: src/lib/github-learning/lessons.ts:572
+msgid "The -c option creates a branch while switching."
+msgstr "The -c option creates a branch while switching."
+
+#: src/lib/github-learning/lessons.ts:573
+msgid "Push the new branch after switching to it."
+msgstr "Push the new branch after switching to it."
+
+#: src/lib/github-learning/lessons.ts:593
+msgid "Parallel team workflows"
+msgstr "Parallel team workflows"
+
+#: src/lib/github-learning/lessons.ts:594
+msgid "Follow several developers as their branches keep moving independently from the same stable main line."
+msgstr "Follow several developers as their branches keep moving independently from the same stable main line."
+
+#: src/lib/github-learning/lessons.ts:598
+msgid "Parallel history"
+msgstr "Parallel history"
+
+#: src/lib/github-learning/lessons.ts:599
+msgid "Understand a repository where feature and hotfix work continue beside main."
+msgstr "Understand a repository where feature and hotfix work continue beside main."
+
+#: src/lib/github-learning/lessons.ts:604
+msgid "Alice has two profile commits while Bob has an urgent login fix. Both branches share the same stable main commit, but each branch pointer advances only when its owner commits."
+msgstr "Alice has two profile commits while Bob has an urgent login fix. Both branches share the same stable main commit, but each branch pointer advances only when its owner commits."
+
+#: src/lib/github-learning/lessons.ts:609
+msgid "Read the history reachable from the current branch while the visual map keeps the other active branches visible."
+msgstr "Read the history reachable from the current branch while the visual map keeps the other active branches visible."
+
+#: src/lib/github-learning/lessons.ts:614
+msgid "Parallel lanes do not mean duplicated repositories. They are lightweight pointers into one connected commit history."
+msgstr "Parallel lanes do not mean duplicated repositories. They are lightweight pointers into one connected commit history."
+
+#: src/lib/github-learning/lessons.ts:620
+msgid "Navigate the team's branch map"
+msgstr "Navigate the team's branch map"
+
+#: src/lib/github-learning/lessons.ts:622
+msgid "Inspect the three active branch lanes."
+msgstr "Inspect the three active branch lanes."
+
+#: src/lib/github-learning/lessons.ts:623
+msgid "Switch from main to feature/profile without changing its commits."
+msgstr "Switch from main to feature/profile without changing its commits."
+
+#: src/lib/github-learning/lessons.ts:626
+msgid "Use git branch to list local branches."
+msgstr "Use git branch to list local branches."
+
+#: src/lib/github-learning/lessons.ts:627
+msgid "Use git switch followed by the full branch name."
+msgstr "Use git switch followed by the full branch name."
+
+#: src/lib/github-learning/lessons.ts:649
+msgid "Continue feature"
+msgstr "Continue feature"
+
+#: src/lib/github-learning/lessons.ts:650
+msgid "Add another focused commit without moving main or the hotfix branch."
+msgstr "Add another focused commit without moving main or the hotfix branch."
+
+#: src/lib/github-learning/lessons.ts:655
+msgid "Alice can continue the profile branch after her earlier commits. The new commit extends only feature/profile; main and fix/login stay at their current snapshots."
+msgstr "Alice can continue the profile branch after her earlier commits. The new commit extends only feature/profile; main and fix/login stay at their current snapshots."
+
+#: src/lib/github-learning/lessons.ts:660
+msgid "Commit the staged profile test on Alice's current branch."
+msgstr "Commit the staged profile test on Alice's current branch."
+
+#: src/lib/github-learning/lessons.ts:665
+msgid "Watch the feature lane grow by one node while the other branch tips remain fixed."
+msgstr "Watch the feature lane grow by one node while the other branch tips remain fixed."
+
+#: src/lib/github-learning/lessons.ts:671
+msgid "Extend Alice's feature history"
+msgstr "Extend Alice's feature history"
+
+#: src/lib/github-learning/lessons.ts:673
+msgid "Confirm that feature/profile is the current branch."
+msgstr "Confirm that feature/profile is the current branch."
+
+#: src/lib/github-learning/lessons.ts:674
+msgid "Commit the staged profile test with a clear message."
+msgstr "Commit the staged profile test with a clear message."
+
+#: src/lib/github-learning/lessons.ts:675
+msgid "Keep main and fix/login unchanged."
+msgstr "Keep main and fix/login unchanged."
+
+#: src/lib/github-learning/lessons.ts:678
+msgid "The test file is already staged."
+msgstr "The test file is already staged."
+
+#: src/lib/github-learning/lessons.ts:692
+msgid "Continue hotfix"
+msgstr "Continue hotfix"
+
+#: src/lib/github-learning/lessons.ts:693
+msgid "Advance the fix branch independently while feature work remains untouched."
+msgstr "Advance the fix branch independently while feature work remains untouched."
+
+#: src/lib/github-learning/lessons.ts:698
+msgid "Bob adds a focused login regression test on fix/login. This creates another hotfix node without interrupting Alice's longer-running feature branch."
+msgstr "Bob adds a focused login regression test on fix/login. This creates another hotfix node without interrupting Alice's longer-running feature branch."
+
+#: src/lib/github-learning/lessons.ts:703
+msgid "Commit the staged regression test on Bob's hotfix branch."
+msgstr "Commit the staged regression test on Bob's hotfix branch."
+
+#: src/lib/github-learning/lessons.ts:708
+msgid "Urgency should change priority, not quality. Keep the hotfix small, tested, and ready for review."
+msgstr "Urgency should change priority, not quality. Keep the hotfix small, tested, and ready for review."
+
+#: src/lib/github-learning/lessons.ts:714
+msgid "Extend Bob's hotfix history"
+msgstr "Extend Bob's hotfix history"
+
+#: src/lib/github-learning/lessons.ts:716
+msgid "Confirm that fix/login is the current branch."
+msgstr "Confirm that fix/login is the current branch."
+
+#: src/lib/github-learning/lessons.ts:717
+msgid "Commit the staged login regression test."
+msgstr "Commit the staged login regression test."
+
+#: src/lib/github-learning/lessons.ts:718
+msgid "Keep main and feature/profile unchanged."
+msgstr "Keep main and feature/profile unchanged."
+
+#: src/lib/github-learning/lessons.ts:721
+msgid "The regression test is already staged."
+msgstr "The regression test is already staged."
+
+#: src/lib/github-learning/lessons.ts:722
+msgid "Use a concise commit message describing the test."
+msgstr "Use a concise commit message describing the test."
+
+#: src/lib/github-learning/lessons.ts:735
+msgid "Publish branches"
+msgstr "Publish branches"
+
+#: src/lib/github-learning/lessons.ts:736
+msgid "Share both independent lines of work without moving stable main."
+msgstr "Share both independent lines of work without moving stable main."
+
+#: src/lib/github-learning/lessons.ts:741
+msgid "Publishing each branch creates a matching remote pointer. Teammates and automated checks can then review both lines of work while origin/main remains stable."
+msgstr "Publishing each branch creates a matching remote pointer. Teammates and automated checks can then review both lines of work while origin/main remains stable."
+
+#: src/lib/github-learning/lessons.ts:746
+msgid "Publish Alice's feature branch without merging it into main."
+msgstr "Publish Alice's feature branch without merging it into main."
+
+#: src/lib/github-learning/lessons.ts:751
+msgid "Push each named branch explicitly when coordinating several active lines of work."
+msgstr "Push each named branch explicitly when coordinating several active lines of work."
+
+#: src/lib/github-learning/lessons.ts:757
+msgid "Share both team branches"
+msgstr "Share both team branches"
+
+#: src/lib/github-learning/lessons.ts:759
+msgid "Push feature/profile to origin."
+msgstr "Push feature/profile to origin."
+
+#: src/lib/github-learning/lessons.ts:760
+msgid "Push fix/login to origin."
+msgstr "Push fix/login to origin."
+
+#: src/lib/github-learning/lessons.ts:761
+msgid "Leave main unchanged and the working tree clean."
+msgstr "Leave main unchanged and the working tree clean."
+
+#: src/lib/github-learning/lessons.ts:764
+msgid "Use git push origin followed by each branch name."
+msgstr "Use git push origin followed by each branch name."
+
+#: src/lib/github-learning/lessons.ts:765
+msgid "You can publish a named branch without switching to it."
+msgstr "You can publish a named branch without switching to it."
+
+#: src/lib/github-learning/lessons.ts:788
+msgid "Publishing with Dev, UAT, and Production"
+msgstr "Publishing with Dev, UAT, and Production"
+
+#: src/lib/github-learning/lessons.ts:789
+msgid "Use separate environments to move quickly, validate with stakeholders, and protect real customers."
+msgstr "Use separate environments to move quickly, validate with stakeholders, and protect real customers."
+
+#: src/lib/github-learning/lessons.ts:793
+msgid "Development environment"
+msgstr "Development environment"
+
+#: src/lib/github-learning/lessons.ts:794
+msgid "Use a fast, disposable environment for integration and early feedback."
+msgstr "Use a fast, disposable environment for integration and early feedback."
+
+#: src/lib/github-learning/lessons.ts:799
+msgid "A shared Development environment runs recent accepted changes before they are release candidates. It favors speed, automatic deployment, useful logs, and data that can be safely reset."
+msgstr "A shared Development environment runs recent accepted changes before they are release candidates. It favors speed, automatic deployment, useful logs, and data that can be safely reset."
+
+#: src/lib/github-learning/lessons.ts:804
+msgid "A team can publish its integration branch to trigger an automatic Development deployment."
+msgstr "A team can publish its integration branch to trigger an automatic Development deployment."
+
+#: src/lib/github-learning/lessons.ts:809
+msgid "Take advantage of Development by experimenting early, integrating often, and fixing inexpensive failures before they reach testers."
+msgstr "Take advantage of Development by experimenting early, integrating often, and fixing inexpensive failures before they reach testers."
+
+#: src/lib/github-learning/lessons.ts:816
+msgid "UAT environment"
+msgstr "UAT environment"
+
+#: src/lib/github-learning/lessons.ts:817
+msgid "Validate a production-like release with the people who understand the business need."
+msgstr "Validate a production-like release with the people who understand the business need."
+
+#: src/lib/github-learning/lessons.ts:822
+msgid "User Acceptance Testing gives product owners, QA, and selected users a stable release candidate. Its configuration should resemble Production while its data remains masked or safely representative."
+msgstr "User Acceptance Testing gives product owners, QA, and selected users a stable release candidate. Its configuration should resemble Production while its data remains masked or safely representative."
+
+#: src/lib/github-learning/lessons.ts:827
+msgid "Publishing a release candidate can trigger deployment to UAT for acceptance and regression testing."
+msgstr "Publishing a release candidate can trigger deployment to UAT for acceptance and regression testing."
+
+#: src/lib/github-learning/lessons.ts:832
+msgid "Take advantage of UAT to catch requirement misunderstandings and workflow problems that automated tests cannot recognize."
+msgstr "Take advantage of UAT to catch requirement misunderstandings and workflow problems that automated tests cannot recognize."
+
+#: src/lib/github-learning/lessons.ts:839
+msgid "Production environment"
+msgstr "Production environment"
+
+#: src/lib/github-learning/lessons.ts:840
+msgid "Release approved software to customers with monitoring and recovery controls."
+msgstr "Release approved software to customers with monitoring and recovery controls."
+
+#: src/lib/github-learning/lessons.ts:845
+msgid "Production serves real customers and real data. Access is restricted, changes are deliberate, monitoring is continuous, and every release needs a tested rollback or recovery path."
+msgstr "Production serves real customers and real data. Access is restricted, changes are deliberate, monitoring is continuous, and every release needs a tested rollback or recovery path."
+
+#: src/lib/github-learning/lessons.ts:850
+msgid "Teams commonly protect main and let an approved update initiate the Production release process."
+msgstr "Teams commonly protect main and let an approved update initiate the Production release process."
+
+#: src/lib/github-learning/lessons.ts:855
+msgid "Production credentials and configuration belong in a secure deployment system, never in source code or a client application."
+msgstr "Production credentials and configuration belong in a secure deployment system, never in source code or a client application."
+
+#: src/lib/github-learning/lessons.ts:862
+msgid "Safe promotion"
+msgstr "Safe promotion"
+
+#: src/lib/github-learning/lessons.ts:863
+msgid "Move one reviewed release from Development through UAT to Production using explicit gates."
+msgstr "Move one reviewed release from Development through UAT to Production using explicit gates."
+
+#: src/lib/github-learning/lessons.ts:868
+msgid "A reliable pipeline builds one version, tests it in Development, promotes the same artifact to UAT, and releases that artifact to Production after acceptance. Environment-specific configuration stays outside the build."
+msgstr "A reliable pipeline builds one version, tests it in Development, promotes the same artifact to UAT, and releases that artifact to Production after acceptance. Environment-specific configuration stays outside the build."
+
+#: src/lib/github-learning/lessons.ts:873
+msgid "Begin a release by confirming exactly which branch and commit will move through the pipeline."
+msgstr "Begin a release by confirming exactly which branch and commit will move through the pipeline."
+
+#: src/lib/github-learning/lessons.ts:878
+msgid "Promotion gates add confidence without rebuilding different code. If Production fails, observability and a prepared rollback reduce recovery time."
+msgstr "Promotion gates add confidence without rebuilding different code. If Production fails, observability and a prepared rollback reduce recovery time."
+
+#: src/lib/github-learning/lessons.ts:884
+msgid "Prepare branches for a publishing pipeline"
+msgstr "Prepare branches for a publishing pipeline"
+
+#: src/lib/github-learning/lessons.ts:886
+msgid "Create a develop branch from the stable main commit."
+msgstr "Create a develop branch from the stable main commit."
+
+#: src/lib/github-learning/lessons.ts:887
+msgid "Create a release/uat branch from the same reviewed commit."
+msgstr "Create a release/uat branch from the same reviewed commit."
+
+#: src/lib/github-learning/lessons.ts:888
+msgid "Publish both environment branches to origin."
+msgstr "Publish both environment branches to origin."
+
+#: src/lib/github-learning/lessons.ts:889
+msgid "Leave origin/main stable and the working tree clean."
+msgstr "Leave origin/main stable and the working tree clean."
+
+#: src/lib/github-learning/lessons.ts:892
+msgid "Use git branch followed by each branch name."
+msgstr "Use git branch followed by each branch name."
+
+#: src/lib/github-learning/lessons.ts:893
+msgid "Use git push origin followed by the branch you want to publish."
+msgstr "Use git push origin followed by the branch you want to publish."
+
 #: src/components/terminal/html-preview.tsx:40
 msgid "Nothing to render here."
 msgstr "Nothing to render here."
 
-#: src/components/terminal/index.tsx:44
+#: src/components/terminal/index.tsx:47
 msgid "Run"
 msgstr "Run"
 
-#: src/components/terminal/index.tsx:59
+#: src/components/terminal/index.tsx:62
 msgid "Compile"
 msgstr "Compile"
 
-#: src/components/terminal/index.tsx:74
+#: src/components/terminal/index.tsx:77
 msgid "Preview"
 msgstr "Preview"
 
-#: src/components/terminal/index.tsx:88
+#: src/components/terminal/index.tsx:93
 msgid "Clear"
 msgstr "Clear"
 
-#: src/components/terminal/index.tsx:102
+#: src/components/terminal/index.tsx:107
 msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
 msgstr "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
 
-#: src/components/terminal/index.tsx:107
+#: src/components/terminal/index.tsx:112
 msgid "Your code executed successfully; however, it did not generate any output for the console."
 msgstr "Your code executed successfully; however, it did not generate any output for the console."
 
-#: src/components/terminal/index.tsx:112
+#: src/components/terminal/index.tsx:117
 msgid "Write your code and press <0/> to execute it. The results will be displayed here."
 msgstr "Write your code and press <0/> to execute it. The results will be displayed here."
 
-#: src/components/terminal/index.tsx:132
+#: src/components/terminal/index.tsx:137
 msgid "Your code compilation exceeded the allotted time and was terminated. Consider optimising your code for faster compilation."
 msgstr "Your code compilation exceeded the allotted time and was terminated. Consider optimising your code for faster compilation."
 
-#: src/components/terminal/index.tsx:138
+#: src/components/terminal/index.tsx:143
 msgid "<0>If</0> this runtime requires compilation, the output will be displayed here."
 msgstr "<0>If</0> this runtime requires compilation, the output will be displayed here."
 
-#: src/components/terminal/index.tsx:156
+#: src/components/terminal/index.tsx:161
 msgid "This runtime does not have a way to display any preview."
 msgstr "This runtime does not have a way to display any preview."
 
+#: src/components/terminal/index.tsx:186
+msgid "Checks"
+msgstr "Checks"
+
+#: src/components/library/index.tsx:67
+msgid "Imports must be smaller than 5 MB."
+msgstr "Imports must be smaller than 5 MB."
+
+#: src/components/library/index.tsx:71
+msgid "Imported {0} project(s); skipped {1} duplicate(s)."
+msgstr "Imported {0} project(s); skipped {1} duplicate(s)."
+
+#: src/components/library/index.tsx:77
+msgid "Could not import that file."
+msgstr "Could not import that file."
+
+#: src/components/library/index.tsx:88
+msgid "My library"
+msgstr "My library"
+
+#: src/components/library/index.tsx:91
+msgid "Projects are stored only in this browser."
+msgstr "Projects are stored only in this browser."
+
+#: src/components/library/index.tsx:96
+msgid "Search saved projects"
+msgstr "Search saved projects"
+
+#: src/components/library/index.tsx:97
+msgid "Search projects or tags"
+msgstr "Search projects or tags"
+
+#: src/components/library/index.tsx:107
+msgid "Last updated"
+msgstr "Last updated"
+
+#: src/components/library/index.tsx:110
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:127
+msgid "Name"
+msgstr "Name"
+
+#: src/components/library/index.tsx:113
+msgid "Favorites first"
+msgstr "Favorites first"
+
+#: src/components/library/index.tsx:127
+msgid "Export"
+msgstr "Export"
+
+#: src/components/library/index.tsx:131
+msgid "Import"
+msgstr "Import"
+
+#: src/components/library/index.tsx:148
+msgid "No saved projects yet. Open a playground and select Save to library."
+msgstr "No saved projects yet. Open a playground and select Save to library."
+
+#: src/components/library/save-button.tsx:53
+#: src/components/library/save-button.tsx:57
+#: src/components/library/save-button.tsx:63
+msgid "Save to library"
+msgstr "Save to library"
+
+#: src/components/library/save-button.tsx:66
+msgid "Save this project only in the current browser."
+msgstr "Save this project only in the current browser."
+
+#: src/components/library/save-button.tsx:70
+msgid "Project name"
+msgstr "Project name"
+
+#: src/components/library/save-button.tsx:79
+msgid "Tags (comma separated)"
+msgstr "Tags (comma separated)"
+
+#: src/components/library/save-button.tsx:87
+msgid "Save project"
+msgstr "Save project"
+
 #: src/components/header/index.tsx:50
-#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:26
 msgid "Playgrounds"
 msgstr "Playgrounds"
 
-#: src/components/header/index.tsx:61
+#: src/components/header/index.tsx:56
+msgid "My Library"
+msgstr "My Library"
+
+#: src/components/header/index.tsx:62
+msgid "Git Course"
+msgstr "Git Course"
+
+#: src/components/header/index.tsx:73
 msgid "Browser Extension"
 msgstr "Browser Extension"
 
-#: src/components/header/index.tsx:63
+#: src/components/header/index.tsx:75
 msgid "new"
 msgstr "new"
 
-#: src/components/header/index.tsx:70
+#: src/components/header/index.tsx:82
 msgid "Discord Bot"
 msgstr "Discord Bot"
 
-#: src/components/header/index.tsx:137
+#: src/components/header/index.tsx:149
 msgid "Toggle Mobile Navigation"
 msgstr "Toggle Mobile Navigation"
 
@@ -78,6 +923,757 @@ msgstr "Change Language"
 #: src/components/header/theme-switcher.tsx:26
 msgid "Toggle Theme"
 msgstr "Toggle Theme"
+
+#: src/components/github-learning/command-branch-diagram.tsx:167
+msgid "Moved back one command"
+msgstr "Moved back one command"
+
+#: src/components/github-learning/command-branch-diagram.tsx:169
+msgid "Moved forward one command"
+msgstr "Moved forward one command"
+
+#: src/components/github-learning/command-branch-diagram.tsx:171
+msgid "Ready for a command"
+msgstr "Ready for a command"
+
+#: src/components/github-learning/command-branch-diagram.tsx:172
+msgid "New commit added"
+msgstr "New commit added"
+
+#: src/components/github-learning/command-branch-diagram.tsx:173
+msgid "New branch created"
+msgstr "New branch created"
+
+#: src/components/github-learning/command-branch-diagram.tsx:174
+msgid "HEAD moved to another branch"
+msgstr "HEAD moved to another branch"
+
+#: src/components/github-learning/command-branch-diagram.tsx:175
+msgid "Staging area updated"
+msgstr "Staging area updated"
+
+#: src/components/github-learning/command-branch-diagram.tsx:176
+msgid "Remote branch updated"
+msgstr "Remote branch updated"
+
+#: src/components/github-learning/command-branch-diagram.tsx:177
+msgid "Remote code installed on your local branch"
+msgstr "Remote code installed on your local branch"
+
+#: src/components/github-learning/command-branch-diagram.tsx:178
+msgid "Working files updated"
+msgstr "Working files updated"
+
+#: src/components/github-learning/command-branch-diagram.tsx:179
+msgid "Command replayed — current location highlighted"
+msgstr "Command replayed — current location highlighted"
+
+#: src/components/github-learning/command-branch-diagram.tsx:236
+msgid "Local computer"
+msgstr "Local computer"
+
+#: src/components/github-learning/command-branch-diagram.tsx:253
+msgid "Code package moving to your computer"
+msgstr "Code package moving to your computer"
+
+#: src/components/github-learning/command-branch-diagram.tsx:254
+msgid "Code package moving to GitHub"
+msgstr "Code package moving to GitHub"
+
+#: src/components/github-learning/command-branch-diagram.tsx:266
+msgid "Switching local branch"
+msgstr "Switching local branch"
+
+#: src/components/github-learning/command-branch-diagram.tsx:270
+msgid "Code transfer"
+msgstr "Code transfer"
+
+#: src/components/github-learning/command-branch-diagram.tsx:282
+msgid "GitHub remote"
+msgstr "GitHub remote"
+
+#: src/components/github-learning/command-branch-diagram.tsx:295
+msgid "Working"
+msgstr "Working"
+
+#: src/components/github-learning/command-branch-diagram.tsx:307
+msgid "Staged"
+msgstr "Staged"
+
+#: src/components/github-learning/command-branch-diagram.tsx:319
+#: src/components/github-learning/course-lab.tsx:38
+#: src/components/github-learning/lesson-exercise.tsx:240
+msgid "Commits"
+msgstr "Commits"
+
+#: src/components/github-learning/command-branch-diagram.tsx:326
+msgid "Solid lines connect commits"
+msgstr "Solid lines connect commits"
+
+#: src/components/github-learning/command-branch-diagram.tsx:332
+msgid "Green dot shows your current location"
+msgstr "Green dot shows your current location"
+
+#: src/components/github-learning/command-branch-diagram.tsx:352
+msgid "A live diagram of the simulated repository. Branch lines, commits, remote pointers, and HEAD update after each command."
+msgstr "A live diagram of the simulated repository. Branch lines, commits, remote pointers, and HEAD update after each command."
+
+#: src/components/github-learning/command-branch-diagram.tsx:422
+msgid "HEAD moving between local branches"
+msgstr "HEAD moving between local branches"
+
+#: src/components/github-learning/command-branch-diagram.tsx:537
+msgid "Command moving to the current commit"
+msgstr "Command moving to the current commit"
+
+#: src/components/github-learning/course-lab.tsx:13
+msgid "Commit history"
+msgstr "Commit history"
+
+#: src/components/github-learning/course-lab.tsx:15
+#: src/components/github-learning/lesson-exercise.tsx:217
+#: src/components/github-learning/repository-bridge.tsx:206
+msgid "commit"
+msgstr "commit"
+
+#: src/components/github-learning/course-lab.tsx:16
+#: src/components/github-learning/lesson-exercise.tsx:218
+#: src/components/github-learning/repository-bridge.tsx:207
+msgid "Authored by"
+msgstr "Authored by"
+
+#: src/components/github-learning/course-lab.tsx:20
+msgid "Git practice terminal"
+msgstr "Git practice terminal"
+
+#: src/components/github-learning/course-lab.tsx:21
+msgid "Practice Git commands safely. Everything here stays inside a simulated repository in your browser."
+msgstr "Practice Git commands safely. Everything here stays inside a simulated repository in your browser."
+
+#: src/components/github-learning/course-lab.tsx:22
+#: src/components/github-learning/lesson-exercise.tsx:224
+msgid "Git command"
+msgstr "Git command"
+
+#: src/components/github-learning/course-lab.tsx:24
+#: src/components/github-learning/lesson-exercise.tsx:226
+msgid "Run command"
+msgstr "Run command"
+
+#: src/components/github-learning/course-lab.tsx:25
+msgid "Reset"
+msgstr "Reset"
+
+#: src/components/github-learning/course-lab.tsx:26
+msgid "Try a command"
+msgstr "Try a command"
+
+#: src/components/github-learning/course-lab.tsx:27
+#: src/components/github-learning/lesson-exercise.tsx:229
+msgid "Command history"
+msgstr "Command history"
+
+#: src/components/github-learning/course-lab.tsx:28
+msgid "Run a command to begin."
+msgstr "Run a command to begin."
+
+#: src/components/github-learning/course-lab.tsx:29
+#: src/components/github-learning/lesson-exercise.tsx:231
+msgid "Try another command"
+msgstr "Try another command"
+
+#: src/components/github-learning/course-lab.tsx:30
+#: src/components/github-learning/lesson-exercise.tsx:232
+msgid "Replay command"
+msgstr "Replay command"
+
+#: src/components/github-learning/course-lab.tsx:31
+#: src/components/github-learning/lesson-exercise.tsx:233
+msgid "Previous"
+msgstr "Previous"
+
+#: src/components/github-learning/course-lab.tsx:32
+#: src/components/github-learning/lesson-exercise.tsx:234
+msgid "Next"
+msgstr "Next"
+
+#: src/components/github-learning/course-lab.tsx:33
+#: src/components/github-learning/lesson-exercise.tsx:235
+msgid "Step"
+msgstr "Step"
+
+#: src/components/github-learning/course-lab.tsx:34
+#: src/components/github-learning/lesson-exercise.tsx:236
+msgid "Go to step"
+msgstr "Go to step"
+
+#: src/components/github-learning/course-lab.tsx:35
+#: src/components/github-learning/lesson-exercise.tsx:237
+msgid "Before"
+msgstr "Before"
+
+#: src/components/github-learning/course-lab.tsx:36
+#: src/components/github-learning/lesson-exercise.tsx:238
+msgid "After"
+msgstr "After"
+
+#: src/components/github-learning/course-lab.tsx:37
+#: src/components/github-learning/lesson-exercise.tsx:239
+msgid "Current HEAD"
+msgstr "Current HEAD"
+
+#: src/components/github-learning/course-lab.tsx:39
+#: src/components/github-learning/lesson-exercise.tsx:241
+msgid "Branches"
+msgstr "Branches"
+
+#: src/components/github-learning/course-lab.tsx:40
+#: src/components/github-learning/lesson-exercise.tsx:242
+msgid "Staged files"
+msgstr "Staged files"
+
+#: src/components/github-learning/course-lab.tsx:41
+#: src/components/github-learning/lesson-exercise.tsx:243
+msgid "Working changes"
+msgstr "Working changes"
+
+#: src/components/github-learning/course-lab.tsx:42
+#: src/components/github-learning/lesson-exercise.tsx:244
+msgid "Remote branches"
+msgstr "Remote branches"
+
+#: src/components/github-learning/course-lab.tsx:43
+#: src/components/github-learning/lesson-exercise.tsx:245
+msgid "No repository state change"
+msgstr "No repository state change"
+
+#: src/components/github-learning/course-navigation.tsx:14
+msgid "Overview"
+msgstr "Overview"
+
+#: src/components/github-learning/course-navigation.tsx:19
+msgid "Lessons"
+msgstr "Lessons"
+
+#: src/components/github-learning/course-navigation.tsx:24
+#: src/app/[locale]/(courses)/courses/github/sandbox/page.tsx:26
+msgid "Practice lab"
+msgstr "Practice lab"
+
+#: src/components/github-learning/course-navigation.tsx:29
+msgid "Repository viewer"
+msgstr "Repository viewer"
+
+#: src/components/github-learning/course-navigation.tsx:39
+msgid "GitHub Learning Course"
+msgstr "GitHub Learning Course"
+
+#: src/components/github-learning/course-progress.tsx:40
+msgid "First lesson"
+msgstr "First lesson"
+
+#: src/components/github-learning/course-progress.tsx:41
+msgid "Complete your first Git lesson."
+msgstr "Complete your first Git lesson."
+
+#: src/components/github-learning/course-progress.tsx:44
+msgid "Hands on"
+msgstr "Hands on"
+
+#: src/components/github-learning/course-progress.tsx:45
+msgid "Complete your first simulated exercise."
+msgstr "Complete your first simulated exercise."
+
+#: src/components/github-learning/course-progress.tsx:48
+msgid "Branch builder"
+msgstr "Branch builder"
+
+#: src/components/github-learning/course-progress.tsx:49
+msgid "Create and switch to feature branches."
+msgstr "Create and switch to feature branches."
+
+#: src/components/github-learning/course-progress.tsx:52
+msgid "Git graduate"
+msgstr "Git graduate"
+
+#: src/components/github-learning/course-progress.tsx:53
+msgid "Complete all twenty-one course lessons."
+msgstr "Complete all twenty-one course lessons."
+
+#: src/components/github-learning/course-progress.tsx:82
+msgid "Your progress"
+msgstr "Your progress"
+
+#: src/components/github-learning/course-progress.tsx:85
+msgid "of"
+msgstr "of"
+
+#: src/components/github-learning/course-progress.tsx:86
+msgid "lessons complete"
+msgstr "lessons complete"
+
+#: src/components/github-learning/course-progress.tsx:112
+msgid "Achievements"
+msgstr "Achievements"
+
+#: src/components/github-learning/course-progress.tsx:135
+#: src/components/challenges/daily-challenge.tsx:85
+msgid "Completed"
+msgstr "Completed"
+
+#: src/components/github-learning/course-progress.tsx:135
+msgid "Not completed"
+msgstr "Not completed"
+
+#: src/components/github-learning/environment-pipeline.tsx:58
+msgid "Development"
+msgstr "Development"
+
+#: src/components/github-learning/environment-pipeline.tsx:60
+msgid "Build and integrate changes quickly"
+msgstr "Build and integrate changes quickly"
+
+#: src/components/github-learning/environment-pipeline.tsx:61
+msgid "Developers and automated tests"
+msgstr "Developers and automated tests"
+
+#: src/components/github-learning/environment-pipeline.tsx:62
+msgid "Changes frequently"
+msgstr "Changes frequently"
+
+#: src/components/github-learning/environment-pipeline.tsx:63
+msgid "Seeded, fake, or disposable data"
+msgstr "Seeded, fake, or disposable data"
+
+#: src/components/github-learning/environment-pipeline.tsx:64
+msgid "Automatic after an accepted change"
+msgstr "Automatic after an accepted change"
+
+#: src/components/github-learning/environment-pipeline.tsx:65
+msgid "Fast feedback makes experimentation inexpensive."
+msgstr "Fast feedback makes experimentation inexpensive."
+
+#: src/components/github-learning/environment-pipeline.tsx:66
+msgid "Code review and automated checks pass"
+msgstr "Code review and automated checks pass"
+
+#: src/components/github-learning/environment-pipeline.tsx:71
+msgid "User Acceptance Testing"
+msgstr "User Acceptance Testing"
+
+#: src/components/github-learning/environment-pipeline.tsx:73
+msgid "Validate that the release solves the business need"
+msgstr "Validate that the release solves the business need"
+
+#: src/components/github-learning/environment-pipeline.tsx:74
+msgid "QA, product owners, and selected users"
+msgstr "QA, product owners, and selected users"
+
+#: src/components/github-learning/environment-pipeline.tsx:75
+msgid "Production-like release candidate"
+msgstr "Production-like release candidate"
+
+#: src/components/github-learning/environment-pipeline.tsx:76
+msgid "Masked or representative test data"
+msgstr "Masked or representative test data"
+
+#: src/components/github-learning/environment-pipeline.tsx:77
+msgid "Promoted from a tested release candidate"
+msgstr "Promoted from a tested release candidate"
+
+#: src/components/github-learning/environment-pipeline.tsx:78
+msgid "Stakeholders catch requirement gaps before customers do."
+msgstr "Stakeholders catch requirement gaps before customers do."
+
+#: src/components/github-learning/environment-pipeline.tsx:79
+msgid "Business acceptance and regression tests pass"
+msgstr "Business acceptance and regression tests pass"
+
+#: src/components/github-learning/environment-pipeline.tsx:84
+msgid "Production"
+msgstr "Production"
+
+#: src/components/github-learning/environment-pipeline.tsx:86
+msgid "Deliver the approved product to real customers"
+msgstr "Deliver the approved product to real customers"
+
+#: src/components/github-learning/environment-pipeline.tsx:87
+msgid "Customers and operations teams"
+msgstr "Customers and operations teams"
+
+#: src/components/github-learning/environment-pipeline.tsx:88
+msgid "Stable, monitored, and recoverable"
+msgstr "Stable, monitored, and recoverable"
+
+#: src/components/github-learning/environment-pipeline.tsx:89
+msgid "Real customer data with strict access controls"
+msgstr "Real customer data with strict access controls"
+
+#: src/components/github-learning/environment-pipeline.tsx:90
+msgid "Approved release with rollback available"
+msgstr "Approved release with rollback available"
+
+#: src/components/github-learning/environment-pipeline.tsx:91
+msgid "Guardrails protect customer trust while delivering value."
+msgstr "Guardrails protect customer trust while delivering value."
+
+#: src/components/github-learning/environment-pipeline.tsx:92
+msgid "Final approval, observability, and rollback are ready"
+msgstr "Final approval, observability, and rollback are ready"
+
+#: src/components/github-learning/environment-pipeline.tsx:107
+msgid "Publishing environments"
+msgstr "Publishing environments"
+
+#: src/components/github-learning/environment-pipeline.tsx:110
+msgid "Promote one tested release through three environments"
+msgstr "Promote one tested release through three environments"
+
+#: src/components/github-learning/environment-pipeline.tsx:113
+msgid "Development optimizes feedback, UAT validates business expectations, and Production protects real users. Select a stage to compare its purpose and guardrails."
+msgstr "Development optimizes feedback, UAT validates business expectations, and Production protects real users. Select a stage to compare its purpose and guardrails."
+
+#: src/components/github-learning/environment-pipeline.tsx:182
+msgid "Who uses it"
+msgstr "Who uses it"
+
+#: src/components/github-learning/environment-pipeline.tsx:183
+msgid "Expected stability"
+msgstr "Expected stability"
+
+#: src/components/github-learning/environment-pipeline.tsx:184
+#: src/components/github-learning/environment-pipeline.tsx:205
+msgid "Data"
+msgstr "Data"
+
+#: src/components/github-learning/environment-pipeline.tsx:185
+msgid "Promotion gate"
+msgstr "Promotion gate"
+
+#: src/components/github-learning/environment-pipeline.tsx:197
+msgid "Compare all environments"
+msgstr "Compare all environments"
+
+#: src/components/github-learning/environment-pipeline.tsx:203
+msgid "Environment"
+msgstr "Environment"
+
+#: src/components/github-learning/environment-pipeline.tsx:204
+msgid "Audience"
+msgstr "Audience"
+
+#: src/components/github-learning/environment-pipeline.tsx:206
+msgid "Deployment"
+msgstr "Deployment"
+
+#: src/components/github-learning/environment-pipeline.tsx:236
+msgid "Promote the same reviewed artifact forward instead of rebuilding different code for each environment."
+msgstr "Promote the same reviewed artifact forward instead of rebuilding different code for each environment."
+
+#: src/components/github-learning/lesson-content.tsx:25
+msgid "min"
+msgstr "min"
+
+#: src/components/github-learning/lesson-exercise.tsx:133
+msgid "Current branch is {0}"
+msgstr "Current branch is {0}"
+
+#: src/components/github-learning/lesson-exercise.tsx:135
+msgid "Branch {0} exists"
+msgstr "Branch {0} exists"
+
+#: src/components/github-learning/lesson-exercise.tsx:137
+msgid "Repository has {0} commits"
+msgstr "Repository has {0} commits"
+
+#: src/components/github-learning/lesson-exercise.tsx:139
+msgid "Working tree is clean"
+msgstr "Working tree is clean"
+
+#: src/components/github-learning/lesson-exercise.tsx:141
+msgid "Staging area is empty"
+msgstr "Staging area is empty"
+
+#: src/components/github-learning/lesson-exercise.tsx:143
+msgid "Remote branch {0}/{1} exists"
+msgstr "Remote branch {0}/{1} exists"
+
+#: src/components/github-learning/lesson-exercise.tsx:145
+msgid "{0} is {1}"
+msgstr "{0} is {1}"
+
+#: src/components/github-learning/lesson-exercise.tsx:153
+msgid "Interactive exercise"
+msgstr "Interactive exercise"
+
+#: src/components/github-learning/lesson-exercise.tsx:165
+msgid "Success checklist"
+msgstr "Success checklist"
+
+#: src/components/github-learning/lesson-exercise.tsx:175
+#: src/components/challenges/checks.tsx:107
+msgid "Passed"
+msgstr "Passed"
+
+#: src/components/github-learning/lesson-exercise.tsx:180
+msgid "Not complete"
+msgstr "Not complete"
+
+#: src/components/github-learning/lesson-exercise.tsx:194
+msgid "Exercise complete"
+msgstr "Exercise complete"
+
+#: src/components/github-learning/lesson-exercise.tsx:203
+msgid "Show hints"
+msgstr "Show hints"
+
+#: src/components/github-learning/lesson-exercise.tsx:215
+msgid "Exercise repository history"
+msgstr "Exercise repository history"
+
+#: src/components/github-learning/lesson-exercise.tsx:222
+msgid "Exercise terminal"
+msgstr "Exercise terminal"
+
+#: src/components/github-learning/lesson-exercise.tsx:223
+msgid "Commands run only in this browser-based simulated repository."
+msgstr "Commands run only in this browser-based simulated repository."
+
+#: src/components/github-learning/lesson-exercise.tsx:227
+msgid "Reset exercise"
+msgstr "Reset exercise"
+
+#: src/components/github-learning/lesson-exercise.tsx:228
+msgid "Suggested commands"
+msgstr "Suggested commands"
+
+#: src/components/github-learning/lesson-exercise.tsx:230
+msgid "Run a command to begin the exercise."
+msgstr "Run a command to begin the exercise."
+
+#: src/components/github-learning/lesson-progress.tsx:32
+msgid "Lesson completed"
+msgstr "Lesson completed"
+
+#: src/components/github-learning/lesson-progress.tsx:43
+msgid "Complete the exercise to finish this lesson."
+msgstr "Complete the exercise to finish this lesson."
+
+#: src/components/github-learning/lesson-progress.tsx:45
+msgid "Finished reading this lesson?"
+msgstr "Finished reading this lesson?"
+
+#: src/components/github-learning/lesson-progress.tsx:53
+msgid "Mark lesson complete"
+msgstr "Mark lesson complete"
+
+#: src/components/github-learning/repository-bridge.tsx:46
+msgid "Enter a repository as owner/name or a github.com URL."
+msgstr "Enter a repository as owner/name or a github.com URL."
+
+#: src/components/github-learning/repository-bridge.tsx:66
+msgid "Repository not found. Only public repositories can be loaded."
+msgstr "Repository not found. Only public repositories can be loaded."
+
+#: src/components/github-learning/repository-bridge.tsx:68
+#: src/components/github-learning/repository-bridge.tsx:80
+msgid "GitHub returned repository data in an unexpected format."
+msgstr "GitHub returned repository data in an unexpected format."
+
+#: src/components/github-learning/repository-bridge.tsx:70
+#: src/components/github-learning/repository-bridge.tsx:88
+msgid "GitHub could not be reached. Try again in a moment."
+msgstr "GitHub could not be reached. Try again in a moment."
+
+#: src/components/github-learning/repository-bridge.tsx:71
+msgid "The repository could not be loaded."
+msgstr "The repository could not be loaded."
+
+#: src/components/github-learning/repository-bridge.tsx:108
+msgid "Read-only repository viewer"
+msgstr "Read-only repository viewer"
+
+#: src/components/github-learning/repository-bridge.tsx:110
+msgid "Load public repository metadata and recent commit history. This viewer cannot change the repository and never asks for a GitHub token."
+msgstr "Load public repository metadata and recent commit history. This viewer cannot change the repository and never asks for a GitHub token."
+
+#: src/components/github-learning/repository-bridge.tsx:121
+msgid "Public repository"
+msgstr "Public repository"
+
+#: src/components/github-learning/repository-bridge.tsx:141
+msgid "Loading repository"
+msgstr "Loading repository"
+
+#: src/components/github-learning/repository-bridge.tsx:142
+msgid "Load repository"
+msgstr "Load repository"
+
+#: src/components/github-learning/repository-bridge.tsx:168
+msgid "No repository description."
+msgstr "No repository description."
+
+#: src/components/github-learning/repository-bridge.tsx:177
+msgid "Open on GitHub"
+msgstr "Open on GitHub"
+
+#: src/components/github-learning/repository-bridge.tsx:186
+msgid "stars"
+msgstr "stars"
+
+#: src/components/github-learning/repository-bridge.tsx:190
+msgid "forks"
+msgstr "forks"
+
+#: src/components/github-learning/repository-bridge.tsx:193
+msgid "recent commits"
+msgstr "recent commits"
+
+#: src/components/github-learning/repository-bridge.tsx:200
+msgid "Recent commit graph"
+msgstr "Recent commit graph"
+
+#: src/components/github-learning/repository-bridge.tsx:204
+msgid "Read-only GitHub commit history"
+msgstr "Read-only GitHub commit history"
+
+#: src/components/github-learning/repository-bridge.tsx:214
+msgid "This is a limited snapshot of recent public history. Missing older parent commits and branches outside the snapshot are intentionally omitted."
+msgstr "This is a limited snapshot of recent public history. Missing older parent commits and branches outside the snapshot are intentionally omitted."
+
+#: src/components/github-learning/team-branch-diagram.tsx:182
+msgid "Everyone starts from main"
+msgstr "Everyone starts from main"
+
+#: src/components/github-learning/team-branch-diagram.tsx:183
+msgid "The team pulls the latest shared commit before starting new work."
+msgstr "The team pulls the latest shared commit before starting new work."
+
+#: src/components/github-learning/team-branch-diagram.tsx:185
+#: src/components/github-learning/team-branch-diagram.tsx:221
+msgid "Whole team"
+msgstr "Whole team"
+
+#: src/components/github-learning/team-branch-diagram.tsx:188
+msgid "Alice starts a profile feature"
+msgstr "Alice starts a profile feature"
+
+#: src/components/github-learning/team-branch-diagram.tsx:189
+msgid "Alice creates an isolated branch so unfinished UI work cannot destabilize main."
+msgstr "Alice creates an isolated branch so unfinished UI work cannot destabilize main."
+
+#: src/components/github-learning/team-branch-diagram.tsx:191
+msgid "Alice · Frontend"
+msgstr "Alice · Frontend"
+
+#: src/components/github-learning/team-branch-diagram.tsx:194
+msgid "Bob starts an urgent login fix"
+msgstr "Bob starts an urgent login fix"
+
+#: src/components/github-learning/team-branch-diagram.tsx:195
+msgid "Bob branches from the same stable commit while Alice continues independently."
+msgstr "Bob branches from the same stable commit while Alice continues independently."
+
+#: src/components/github-learning/team-branch-diagram.tsx:197
+msgid "Bob · Authentication"
+msgstr "Bob · Authentication"
+
+#: src/components/github-learning/team-branch-diagram.tsx:200
+msgid "Both developers commit in parallel"
+msgstr "Both developers commit in parallel"
+
+#: src/components/github-learning/team-branch-diagram.tsx:201
+msgid "Each branch advances through focused commits without blocking the other developer."
+msgstr "Each branch advances through focused commits without blocking the other developer."
+
+#: src/components/github-learning/team-branch-diagram.tsx:203
+msgid "Alice + Bob"
+msgstr "Alice + Bob"
+
+#: src/components/github-learning/team-branch-diagram.tsx:206
+msgid "Bob's hotfix is reviewed and merged"
+msgstr "Bob's hotfix is reviewed and merged"
+
+#: src/components/github-learning/team-branch-diagram.tsx:207
+msgid "The small urgent pull request reaches main first after automated checks and review."
+msgstr "The small urgent pull request reaches main first after automated checks and review."
+
+#: src/components/github-learning/team-branch-diagram.tsx:209
+msgid "Mia · Reviewer"
+msgstr "Mia · Reviewer"
+
+#: src/components/github-learning/team-branch-diagram.tsx:212
+msgid "Alice's feature follows through review"
+msgstr "Alice's feature follows through review"
+
+#: src/components/github-learning/team-branch-diagram.tsx:213
+msgid "Alice updates from main, resolves any conflicts, and merges the approved feature."
+msgstr "Alice updates from main, resolves any conflicts, and merges the approved feature."
+
+#: src/components/github-learning/team-branch-diagram.tsx:215
+msgid "Alice + Mia"
+msgstr "Alice + Mia"
+
+#: src/components/github-learning/team-branch-diagram.tsx:218
+msgid "The team releases from main"
+msgstr "The team releases from main"
+
+#: src/components/github-learning/team-branch-diagram.tsx:219
+msgid "Main now contains both pieces of work and becomes the source of the next release."
+msgstr "Main now contains both pieces of work and becomes the source of the next release."
+
+#: src/components/github-learning/team-branch-diagram.tsx:251
+msgid "Real team workflow"
+msgstr "Real team workflow"
+
+#: src/components/github-learning/team-branch-diagram.tsx:254
+msgid "Three teammates, two branches, one stable main"
+msgstr "Three teammates, two branches, one stable main"
+
+#: src/components/github-learning/team-branch-diagram.tsx:257
+msgid "Follow feature work and an urgent hotfix as they move through parallel branches, review, merge, and release."
+msgstr "Follow feature work and an urgent hotfix as they move through parallel branches, review, merge, and release."
+
+#: src/components/github-learning/team-branch-diagram.tsx:262
+msgid "Pause animation"
+msgstr "Pause animation"
+
+#: src/components/github-learning/team-branch-diagram.tsx:262
+msgid "Play animation"
+msgstr "Play animation"
+
+#: src/components/github-learning/team-branch-diagram.tsx:283
+msgid "Replay"
+msgstr "Replay"
+
+#: src/components/github-learning/team-branch-diagram.tsx:297
+msgid "Animated team Git branch workflow"
+msgstr "Animated team Git branch workflow"
+
+#: src/components/github-learning/team-branch-diagram.tsx:299
+msgid "A visual timeline showing Alice and Bob working on parallel branches, completing pull request reviews, merging into main, and releasing together."
+msgstr "A visual timeline showing Alice and Bob working on parallel branches, completing pull request reviews, merging into main, and releasing together."
+
+#: src/components/github-learning/team-branch-diagram.tsx:396
+#: src/components/github-learning/team-branch-diagram.tsx:419
+msgid "PR approved"
+msgstr "PR approved"
+
+#: src/components/github-learning/team-branch-diagram.tsx:440
+msgid "Release"
+msgstr "Release"
+
+#: src/components/github-learning/team-branch-diagram.tsx:453
+msgid "Step {0} of {1}"
+msgstr "Step {0} of {1}"
+
+#: src/components/github-learning/team-branch-diagram.tsx:474
+msgid "Show step {0}: {1}"
+msgstr "Show step {0}: {1}"
+
+#: src/components/github-learning/team-branch-diagram.tsx:493
+msgid "Each developer works independently; reviewed changes meet again on main."
+msgstr "Each developer works independently; reviewed changes meet again on main."
 
 #: src/components/explorer/index.tsx:43
 msgid "Explorer"
@@ -124,9 +1720,17 @@ msgstr "CLI Arguments"
 msgid "STDIN"
 msgstr "STDIN"
 
-#: src/components/explorer/use.tsx:68
-msgid "Saved and copied URL to clipboard"
-msgstr "Saved and copied URL to clipboard"
+#: src/components/explorer/use.tsx:60
+msgid "This shared playground link is invalid or too large."
+msgstr "This shared playground link is invalid or too large."
+
+#: src/components/explorer/use.tsx:99
+msgid "Share link copied to clipboard"
+msgstr "Share link copied to clipboard"
+
+#: src/components/explorer/use.tsx:100
+msgid "Could not copy the share link"
+msgstr "Could not copy the share link"
 
 #: src/components/explorer/file/item.tsx:65
 msgid "Rename File"
@@ -135,6 +1739,11 @@ msgstr "Rename File"
 #: src/components/explorer/file/item.tsx:81
 msgid "Delete File"
 msgstr "Delete File"
+
+#: src/components/editor/index.tsx:50
+#: src/components/editor/index.tsx:54
+msgid "Copy share link"
+msgstr "Copy share link"
 
 #: src/components/editor/opened-files/button.tsx:42
 msgid "Untitled"
@@ -151,6 +1760,62 @@ msgstr "No files found"
 #: src/components/editor/execute-bar/index.tsx:150
 msgid "<0>Execute</0> <1>{2}</1> <3>Code</3>"
 msgstr "<0>Execute</0> <1>{2}</1> <3>Code</3>"
+
+#: src/components/challenges/archive.tsx:23
+msgid "Challenge archive"
+msgstr "Challenge archive"
+
+#: src/components/challenges/archive.tsx:26
+msgid "Browse practical JavaScript and Python challenges."
+msgstr "Browse practical JavaScript and Python challenges."
+
+#: src/components/challenges/archive.tsx:60
+msgid "Open challenge"
+msgstr "Open challenge"
+
+#: src/components/challenges/checks.tsx:80
+msgid "Challenge checks"
+msgstr "Challenge checks"
+
+#: src/components/challenges/checks.tsx:83
+msgid "Run your current code against the challenge cases."
+msgstr "Run your current code against the challenge cases."
+
+#: src/components/challenges/checks.tsx:88
+msgid "Run checks"
+msgstr "Run checks"
+
+#: src/components/challenges/checks.tsx:107
+msgid "Try again"
+msgstr "Try again"
+
+#: src/components/challenges/checks.tsx:113
+msgid "No output"
+msgstr "No output"
+
+#: src/components/challenges/daily-challenge.tsx:34
+msgid "Today's challenge"
+msgstr "Today's challenge"
+
+#: src/components/challenges/daily-challenge.tsx:43
+msgid "Your task"
+msgstr "Your task"
+
+#: src/components/challenges/daily-challenge.tsx:54
+msgid "Hints"
+msgstr "Hints"
+
+#: src/components/challenges/daily-challenge.tsx:69
+msgid "View today's challenge"
+msgstr "View today's challenge"
+
+#: src/components/challenges/daily-challenge.tsx:71
+msgid "Open playground"
+msgstr "Open playground"
+
+#: src/components/challenges/daily-challenge.tsx:79
+msgid "Browse archive"
+msgstr "Browse archive"
 
 #: src/app/manifest.ts:10
 #: src/app/[locale]/metadata.ts:15
@@ -205,13 +1870,25 @@ msgstr "student.codes for <0>Chrome</0>"
 msgid "student.codes for <0>Firefox</0>"
 msgstr "student.codes for <0>Firefox</0>"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:24
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:29
 msgid "Explore and run code in different programming languages and runtimes."
 msgstr "Explore and run code in different programming languages and runtimes."
 
-#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:30
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:35
 msgid "Powered by the Piston execution engine."
 msgstr "Powered by the Piston execution engine."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:49
+msgid "Learn Git visually"
+msgstr "Learn Git visually"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:52
+msgid "Practice branches and commands safely in an interactive simulated repository."
+msgstr "Practice branches and commands safely in an interactive simulated repository."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:60
+msgid "Explore course"
+msgstr "Explore course"
 
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:79
 msgid "Choose a playground!"
@@ -242,10 +1919,6 @@ msgstr "Sort By"
 msgid "Popularity"
 msgstr "Popularity"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:127
-msgid "Name"
-msgstr "Name"
-
 #: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
 msgid "Open {0} Playground"
 msgstr "Open {0} Playground"
@@ -269,3 +1942,128 @@ msgstr "{0} Online Playground on student.codes"
 #: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:29
 msgid "Run {0} and more code snippets online in your browser with student.codes's code playground."
 msgstr "Run {0} and more code snippets online in your browser with student.codes's code playground."
+
+#: src/app/[locale]/(courses)/courses/github/layout.tsx:12
+msgid "Interactive course"
+msgstr "Interactive course"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:29
+msgid "Git & GitHub Course | student.codes"
+msgstr "Git & GitHub Course | student.codes"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:30
+msgid "Learn Git, GitHub, and safe publishing environments with visual branches and a simulated repository."
+msgstr "Learn Git, GitHub, and safe publishing environments with visual branches and a simulated repository."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:39
+msgid "Visual repository"
+msgstr "Visual repository"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:41
+msgid "See commits, branches, HEAD, and remote references change as you learn."
+msgstr "See commits, branches, HEAD, and remote references change as you learn."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:49
+msgid "Safe command practice"
+msgstr "Safe command practice"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:51
+msgid "Run learning commands without touching files or repositories on your computer."
+msgstr "Run learning commands without touching files or repositories on your computer."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:60
+msgid "Local-first"
+msgstr "Local-first"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:62
+msgid "Learn without an account, API key, backend, or GitHub access token."
+msgstr "Learn without an account, API key, backend, or GitHub access token."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:74
+msgid "Learn Git without risking a real repository"
+msgstr "Learn Git without risking a real repository"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:77
+msgid "Build confidence with a visual commit graph and an interactive command terminal that runs entirely in your browser."
+msgstr "Build confidence with a visual commit graph and an interactive command terminal that runs entirely in your browser."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:84
+#: src/app/[locale]/(courses)/courses/github/lessons/[lesson]/page.tsx:117
+msgid "Open practice lab"
+msgstr "Open practice lab"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:109
+msgid "21 guided lessons"
+msgstr "21 guided lessons"
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:112
+msgid "Follow the full path from your first Git snapshot through team collaboration and safe publishing environments."
+msgstr "Follow the full path from your first Git snapshot through team collaboration and safe publishing environments."
+
+#: src/app/[locale]/(courses)/courses/github/page.tsx:120
+msgid "Browse lessons"
+msgstr "Browse lessons"
+
+#: src/app/[locale]/(courses)/courses/github/sandbox/page.tsx:15
+msgid "Git Practice Lab | student.codes"
+msgstr "Git Practice Lab | student.codes"
+
+#: src/app/[locale]/(courses)/courses/github/sandbox/page.tsx:16
+msgid "Practice Git commands in a safe browser-based simulated repository."
+msgstr "Practice Git commands in a safe browser-based simulated repository."
+
+#: src/app/[locale]/(courses)/courses/github/sandbox/page.tsx:29
+msgid "Experiment freely. Reset the simulation whenever you want to start again."
+msgstr "Experiment freely. Reset the simulation whenever you want to start again."
+
+#: src/app/[locale]/(courses)/courses/github/repository/page.tsx:17
+msgid "Repository Viewer | Git & GitHub Course"
+msgstr "Repository Viewer | Git & GitHub Course"
+
+#: src/app/[locale]/(courses)/courses/github/repository/page.tsx:18
+msgid "Explore the recent commit graph of a public GitHub repository in a safe, read-only viewer."
+msgstr "Explore the recent commit graph of a public GitHub repository in a safe, read-only viewer."
+
+#: src/app/[locale]/(courses)/courses/github/repository/page.tsx:28
+msgid "Optional real-repository bridge"
+msgstr "Optional real-repository bridge"
+
+#: src/app/[locale]/(courses)/courses/github/repository/page.tsx:31
+msgid "Explore a public GitHub repository"
+msgstr "Explore a public GitHub repository"
+
+#: src/app/[locale]/(courses)/courses/github/repository/page.tsx:34
+msgid "Connect the visual concepts from the course to recent history from a real public project, without granting write access."
+msgstr "Connect the visual concepts from the course to recent history from a real public project, without granting write access."
+
+#: src/app/[locale]/(courses)/courses/github/lessons/page.tsx:27
+msgid "Git & GitHub Lessons | student.codes"
+msgstr "Git & GitHub Lessons | student.codes"
+
+#: src/app/[locale]/(courses)/courses/github/lessons/page.tsx:28
+msgid "Follow twenty-one visual lessons covering Git fundamentals, parallel branches, publishing environments, and GitHub collaboration."
+msgstr "Follow twenty-one visual lessons covering Git fundamentals, parallel branches, publishing environments, and GitHub collaboration."
+
+#: src/app/[locale]/(courses)/courses/github/lessons/page.tsx:45
+msgid "Course lessons"
+msgstr "Course lessons"
+
+#: src/app/[locale]/(courses)/courses/github/lessons/page.tsx:59
+msgid "Module"
+msgstr "Module"
+
+#: src/app/[locale]/(courses)/courses/github/lessons/page.tsx:93
+msgid "minutes"
+msgstr "minutes"
+
+#: src/app/[locale]/(courses)/courses/github/lessons/[lesson]/page.tsx:47
+msgid "Git & GitHub Lesson | student.codes"
+msgstr "Git & GitHub Lesson | student.codes"
+
+#: src/app/[locale]/(courses)/courses/github/lessons/[lesson]/page.tsx:48
+msgid "Learn Git and GitHub with a visual, browser-based course."
+msgstr "Learn Git and GitHub with a visual, browser-based course."
+
+#: src/app/[locale]/(courses)/courses/github/lessons/[lesson]/page.tsx:76
+msgid "All lessons"
+msgstr "All lessons"
