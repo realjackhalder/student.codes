@@ -79,19 +79,20 @@ async function handleRequest(
 
   let upstream: Response | null = null;
 
-  if (env.PISTON_API_KEY && env.PISTON_API_KEY !== 'dummy-piston-api-key') {
-    try {
-      upstream = await fetch(url, {
-        method: req.method,
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: env.PISTON_API_KEY,
-        },
-        body: reqBodyText,
-      });
-    } catch {
-      upstream = null;
+  try {
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    if (env.PISTON_API_KEY && env.PISTON_API_KEY !== 'dummy-piston-api-key') {
+      headers.Authorization = env.PISTON_API_KEY;
     }
+    upstream = await fetch(url, {
+      method: req.method,
+      headers,
+      body: reqBodyText,
+    });
+  } catch {
+    upstream = null;
   }
 
   if (route === 'execute' && (!upstream || !upstream.ok) && reqBodyText) {
