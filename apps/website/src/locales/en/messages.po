@@ -51,11 +51,13 @@ msgid "This runtime does not have a way to display any preview."
 msgstr "This runtime does not have a way to display any preview."
 
 #: src/components/header/index.tsx:50
+#: src/app/[locale]/page.tsx:58
 #: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
 msgid "Playgrounds"
 msgstr "Playgrounds"
 
 #: src/components/header/index.tsx:61
+#: src/app/[locale]/page.tsx:79
 msgid "Browser Extension"
 msgstr "Browser Extension"
 
@@ -64,6 +66,7 @@ msgid "new"
 msgstr "new"
 
 #: src/components/header/index.tsx:70
+#: src/app/[locale]/page.tsx:100
 msgid "Discord Bot"
 msgstr "Discord Bot"
 
@@ -176,6 +179,54 @@ msgstr "online compiler"
 #: src/app/[locale]/metadata.ts:21
 msgid "online interpreter"
 msgstr "online interpreter"
+
+#: src/app/[locale]/page.tsx:25
+msgid "student.codes Platform"
+msgstr "student.codes Platform"
+
+#: src/app/[locale]/page.tsx:27
+msgid "Coming Soon"
+msgstr "Coming Soon"
+
+#: src/app/[locale]/page.tsx:34
+msgid "The Next-Gen"
+msgstr "The Next-Gen"
+
+#: src/app/[locale]/page.tsx:36
+msgid "Code Sandbox"
+msgstr "Code Sandbox"
+
+#: src/app/[locale]/page.tsx:40
+msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+msgstr "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+
+#: src/app/[locale]/page.tsx:61
+msgid "Explore interactive code environments directly in your browser."
+msgstr "Explore interactive code environments directly in your browser."
+
+#: src/app/[locale]/page.tsx:66
+msgid "Explore Playgrounds"
+msgstr "Explore Playgrounds"
+
+#: src/app/[locale]/page.tsx:82
+msgid "Execute code snippets instantly while browsing Chrome or Firefox."
+msgstr "Execute code snippets instantly while browsing Chrome or Firefox."
+
+#: src/app/[locale]/page.tsx:87
+msgid "Get Extension"
+msgstr "Get Extension"
+
+#: src/app/[locale]/page.tsx:103
+msgid "Run code snippets directly in your Discord servers with friends."
+msgstr "Run code snippets directly in your Discord servers with friends."
+
+#: src/app/[locale]/page.tsx:108
+msgid "Add Discord Bot"
+msgstr "Add Discord Bot"
+
+#: src/app/[locale]/page.tsx:122
+msgid "Try Playgrounds Now"
+msgstr "Try Playgrounds Now"
 
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
