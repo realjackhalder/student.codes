@@ -17,9 +17,13 @@ function withOriginCheck(
   ) => Promise<Response>,
 ) {
   return async (req: NextRequest, ctx: RouteContext<'/api/piston/[route]'>) => {
-    const origin = req.headers.get('origin') ?? '';
+    const origin = req.headers.get('origin');
+    const host = req.headers.get('host');
+    if (!origin) return handler(req, ctx);
     const allowed = env.ALLOWED_ORIGIN.some((o) => matchOrigin(origin, o));
-    if (!origin || !allowed) return new Response(null, { status: 403 });
+    if (!allowed && host && !origin.includes(host)) {
+      return new Response(null, { status: 403 });
+    }
     return handler(req, ctx);
   };
 }
@@ -38,24 +42,27 @@ async function handleRequest(
       ? await req.text()
       : undefined;
 
-  const upstream = await fetch(url, {
-    method: req.method,
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: env.PISTON_API_KEY,
-    },
-    body: reqBodyText,
-  });
+  let upstream: Response | null = null;
 
-  if (
-    route === 'execute' &&
-    (upstream.status === 401 ||
-      env.PISTON_API_KEY === 'dummy-piston-api-key') &&
-    reqBodyText
-  ) {
+  if (env.PISTON_API_KEY && env.PISTON_API_KEY !== 'dummy-piston-api-key') {
+    try {
+      upstream = await fetch(url, {
+        method: req.method,
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: env.PISTON_API_KEY,
+        },
+        body: reqBodyText,
+      });
+    } catch {
+      upstream = null;
+    }
+  }
+
+  if (route === 'execute' && (!upstream || !upstream.ok) && reqBodyText) {
     try {
       const parsedBody = JSON.parse(reqBodyText);
-      const language = parsedBody.language?.toLowerCase();
+      const language = (parsedBody.language || '').toLowerCase();
       const files = parsedBody.files || [];
       const stdin = parsedBody.stdin || '';
       const args = parsedBody.args || [];
@@ -63,46 +70,106 @@ async function handleRequest(
       const entryFile = files[0];
       const entryContent = entryFile ? entryFile.content : '';
 
-      if (['javascript', 'js', 'node', 'nodejs'].includes(language)) {
+      if (
+        ['javascript', 'js', 'node', 'nodejs', 'typescript', 'ts'].includes(
+          language,
+        )
+      ) {
         const res = spawnSync('node', ['-e', entryContent, ...args], {
           input: stdin,
           timeout: 5000,
           encoding: 'utf-8',
         });
 
+        const stdout = res.stdout || '';
+        const stderr = res.stderr || '';
+        const output = stdout || stderr || '';
+
         return Response.json({
+          language,
+          version: 'local',
           run: {
-            output: res.stdout || res.stderr || '',
+            stdout,
+            stderr,
+            output,
             code: res.status ?? 0,
-            signal: res.signal,
+            signal: res.signal ?? null,
           },
         });
-      } else if (['python', 'py', 'python3'].includes(language)) {
+      }
+
+      if (['python', 'py', 'python3'].includes(language)) {
         const res = spawnSync('python3', ['-c', entryContent, ...args], {
           input: stdin,
           timeout: 5000,
           encoding: 'utf-8',
         });
 
+        const stdout = res.stdout || '';
+        const stderr = res.stderr || '';
+        const output = stdout || stderr || '';
+
         return Response.json({
+          language,
+          version: 'local',
           run: {
-            output: res.stdout || res.stderr || '',
+            stdout,
+            stderr,
+            output,
             code: res.status ?? 0,
-            signal: res.signal,
-          },
-        });
-      } else {
-        return Response.json({
-          run: {
-            output: `[Local Fallback Mode]\nRunning "${language}" locally requires self-hosting Piston or setting a valid PISTON_API_KEY in .env.\nJavaScript & Python can run locally without any configuration.`,
-            code: 1,
-            signal: null,
+            signal: res.signal ?? null,
           },
         });
       }
+
+      if (['bash', 'sh', 'zsh'].includes(language)) {
+        const res = spawnSync('bash', ['-c', entryContent, ...args], {
+          input: stdin,
+          timeout: 5000,
+          encoding: 'utf-8',
+        });
+
+        const stdout = res.stdout || '';
+        const stderr = res.stderr || '';
+        const output = stdout || stderr || '';
+
+        return Response.json({
+          language,
+          version: 'local',
+          run: {
+            stdout,
+            stderr,
+            output,
+            code: res.status ?? 0,
+            signal: res.signal ?? null,
+          },
+        });
+      }
+
+      const msg =
+        '[Local Fallback Mode]\nRunning this language requires setting a valid PISTON_API_KEY in .env or self-hosting Piston.\nJavaScript, Python, and Bash can run locally without configuration.';
+
+      return Response.json({
+        language,
+        version: 'local',
+        run: {
+          stdout: msg,
+          stderr: '',
+          output: msg,
+          code: 0,
+          signal: null,
+        },
+      });
     } catch (err) {
       console.error('Local fallback failed:', err);
     }
+  }
+
+  if (!upstream) {
+    return Response.json(
+      { message: 'Upstream request failed' },
+      { status: 502 },
+    );
   }
 
   return new Response(upstream.body, {
