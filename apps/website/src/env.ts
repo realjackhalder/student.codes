@@ -8,7 +8,7 @@ export default createEnv({
 
   server: {
     WEBSITE_URL: z.url().transform((v) => new URL(v)),
-    PISTON_API_KEY: z.string().min(1),
+    PISTON_API_KEY: z.string().optional(),
     ALLOWED_ORIGIN: z
       .string()
       .default('*')
