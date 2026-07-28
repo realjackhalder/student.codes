@@ -1,6 +1,6 @@
 {
   "awk+gawk": {
-    "name": "GNU AWK (GNU AWK)",
+    "name": "GNU AWK",
     "aliases": ["gawk", "awk"],
     "popularity": 0,
     "tags": []
@@ -359,13 +359,13 @@
     "tags": []
   },
   "nasm+nasm": {
-    "name": "NASM (NASM)",
+    "name": "NASM",
     "aliases": ["asm", "nasm32", "nasm"],
     "popularity": 0,
     "tags": []
   },
   "nasm64+nasm": {
-    "name": "NASM64 (NASM)",
+    "name": "NASM64",
     "aliases": ["asm64", "nasm64"],
     "popularity": 0,
     "tags": []
@@ -425,7 +425,7 @@
     "tags": []
   },
   "powershell+pwsh": {
-    "name": "PowerShell (PowerShell)",
+    "name": "PowerShell",
     "aliases": ["ps", "pwsh", "ps1", "powershell"],
     "popularity": 13.59,
     "tags": ["scripting"]

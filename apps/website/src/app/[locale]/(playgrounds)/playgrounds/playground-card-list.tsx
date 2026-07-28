@@ -59,14 +59,18 @@ export function PlaygroundCardList({
 
   type SortBy = 'popularity' | 'name';
   const [sortBy, setSortBy] = useQueryParameter<SortBy>('sort', 'popularity');
+  const [pinnedRuntimeIds] = useLocalStorage<string[]>('evaluate.pinned', []);
+
   const sortedRuntimes = useMemo(() => {
-    return [...searchedRuntimes].sort((a, b) => {
+    const unpinned = searchedRuntimes.filter(
+      (r) => !pinnedRuntimeIds.includes(r.id),
+    );
+    return unpinned.sort((a, b) => {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       return b.popularity - a.popularity;
     });
-  }, [searchedRuntimes, sortBy]);
+  }, [searchedRuntimes, sortBy, pinnedRuntimeIds]);
 
-  const [pinnedRuntimeIds] = useLocalStorage<string[]>('evaluate.pinned', []);
   const pinnedRuntimes = useMemo(() => {
     return pinnedRuntimeIds
       .map((id) => initialRuntimes.find((r) => r.id === id))
