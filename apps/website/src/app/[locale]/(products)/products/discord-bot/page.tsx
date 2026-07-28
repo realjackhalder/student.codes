@@ -27,7 +27,7 @@ export default function BrowserExtensionPlatformContent() {
           className="flex items-center gap-2 rounded-full"
           asChild
         >
-          <Link href="https://go.student.codes/discord-bot" target="_blank">
+          <Link href="/go/discord-bot" target="_blank">
             {/** biome-ignore lint/performance/noImgElement: Want to use img */}
             <img
               src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"

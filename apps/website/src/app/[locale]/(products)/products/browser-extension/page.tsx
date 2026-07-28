@@ -29,10 +29,7 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-2 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/1024px-Google_Chrome_icon_%28February_2022%29.svg.png"
@@ -54,10 +51,7 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=edge"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=edge" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Microsoft_Edge_logo_%282019%29.png"
@@ -74,10 +68,7 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=opera"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=opera" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/180px-Opera_2015_icon.svg.png"
@@ -94,10 +85,7 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=brave"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=brave" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Brave_lion_icon.svg"
@@ -115,10 +103,7 @@ export default function BrowserExtensionPlatformPage() {
             className="flex items-center gap-2 rounded-full"
             asChild
           >
-            <Link
-              href="https://go.student.codes/firefox-extension"
-              target="_blank"
-            >
+            <Link href="/go/firefox-extension" target="_blank">
               {/** biome-ignore lint/performance/noImgElement: Want to use img */}
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/800px-Firefox_logo%2C_2019.svg.png"
