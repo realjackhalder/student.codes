@@ -2,9 +2,10 @@ import { type NextRequest, NextResponse } from 'next/server';
 
 const REDIRECTS: Record<string, string> = {
   'discord-bot': 'https://discord.gg/WMuCvVn5uh',
-  'chrome-extension': 'https://chromewebstore.google.com/search/student.codes',
+  'chrome-extension':
+    'https://chromewebstore.google.com/detail/evaluate-run-code-anytime/cnpnedjmgfehbffhilpoiaffjpdjadho',
   'firefox-extension':
-    'https://addons.mozilla.org/en-US/firefox/search/?q=student.codes',
+    'https://addons.mozilla.org/en-US/firefox/addon/evaluate/',
 };
 
 export async function GET(
