@@ -32,7 +32,18 @@ export default async function PlaygroundsPage() {
           </Say>
           <br />
           <span className="opacity-70">
-            <Say>Powered by the Piston execution engine.</Say>
+            <Say>
+              Powered by the{' '}
+              <a
+                href="https://github.com/engineer-man/piston"
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4 hover:text-primary transition-colors"
+              >
+                Piston
+              </a>{' '}
+              execution engine.
+            </Say>
           </span>
         </p>
       </div>

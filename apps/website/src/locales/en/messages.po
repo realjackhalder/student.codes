@@ -1842,6 +1842,54 @@ msgstr "online compiler"
 msgid "online interpreter"
 msgstr "online interpreter"
 
+#: src/app/[locale]/page.tsx:25
+msgid "student.codes Platform"
+msgstr "student.codes Platform"
+
+#: src/app/[locale]/page.tsx:27
+msgid "Coming Soon"
+msgstr "Coming Soon"
+
+#: src/app/[locale]/page.tsx:34
+msgid "The Next-Gen"
+msgstr "The Next-Gen"
+
+#: src/app/[locale]/page.tsx:36
+msgid "Code Sandbox"
+msgstr "Code Sandbox"
+
+#: src/app/[locale]/page.tsx:40
+msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+msgstr "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+
+#: src/app/[locale]/page.tsx:61
+msgid "Explore interactive code environments directly in your browser."
+msgstr "Explore interactive code environments directly in your browser."
+
+#: src/app/[locale]/page.tsx:66
+msgid "Explore Playgrounds"
+msgstr "Explore Playgrounds"
+
+#: src/app/[locale]/page.tsx:82
+msgid "Execute code snippets instantly while browsing Chrome or Firefox."
+msgstr "Execute code snippets instantly while browsing Chrome or Firefox."
+
+#: src/app/[locale]/page.tsx:87
+msgid "Get Extension"
+msgstr "Get Extension"
+
+#: src/app/[locale]/page.tsx:103
+msgid "Run code snippets directly in your Discord servers with friends."
+msgstr "Run code snippets directly in your Discord servers with friends."
+
+#: src/app/[locale]/page.tsx:108
+msgid "Add Discord Bot"
+msgstr "Add Discord Bot"
+
+#: src/app/[locale]/page.tsx:122
+msgid "Try Playgrounds Now"
+msgstr "Try Playgrounds Now"
+
 #: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
 msgid "The <0>student.codes</0> Discord Bot"
 msgstr "The <0>student.codes</0> Discord Bot"
@@ -1850,7 +1898,7 @@ msgstr "The <0>student.codes</0> Discord Bot"
 msgid "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
 msgstr "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
 
-#: src/app/[locale]/(products)/products/discord-bot/page.tsx:37
+#: src/app/[locale]/(products)/products/discord-bot/page.tsx:38
 msgid "student.codes for <0>Discord</0>"
 msgstr "student.codes for <0>Discord</0>"
 
@@ -1858,15 +1906,15 @@ msgstr "student.codes for <0>Discord</0>"
 msgid "The <0>student.codes</0> Browser Extension"
 msgstr "The <0>student.codes</0> Browser Extension"
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:16
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:17
 msgid "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 msgstr "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:42
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:40
 msgid "student.codes for <0>Chrome</0>"
 msgstr "student.codes for <0>Chrome</0>"
 
-#: src/app/[locale]/(products)/products/browser-extension/page.tsx:128
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:114
 msgid "student.codes for <0>Firefox</0>"
 msgstr "student.codes for <0>Firefox</0>"
 
@@ -1894,28 +1942,28 @@ msgstr "Explore course"
 msgid "Choose a playground!"
 msgstr "Choose a playground!"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:92
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:93
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
 msgid "Search runtime playgrounds..."
 msgstr "Search runtime playgrounds..."
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:105
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
 msgid "Clear Search"
 msgstr "Clear Search"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:113
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:117
 msgid "Sort by..."
 msgstr "Sort by..."
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:115
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:119
 msgid "Toggle Sort By Dropdown"
 msgstr "Toggle Sort By Dropdown"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:121
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
 msgid "Sort By"
 msgstr "Sort By"
 
-#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:124
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
 msgid "Popularity"
 msgstr "Popularity"
 

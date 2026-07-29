@@ -9,15 +9,16 @@ export default function BrowserExtensionPlatformPage() {
       <div className="flex flex-col items-center justify-center gap-6 text-center">
         <h1 className="font-bold text-3xl tracking-tight md:text-5xl">
           <Say>
-            The <span className="text-primary">student.codes</span> Browser Extension
+            The <span className="text-primary">student.codes</span> Browser
+            Extension
           </Say>
         </h1>
         <p className="mx-auto max-w-5xl text-balance text-sm md:text-base">
           <Say>
             When you stumble upon code snippets while browsing the web, wouldn't
-            it be great to execute them instantly? Look no further—the student.codes
-            extension is your solution, with its over 70 supported languages and
-            quick code execution capabilities.
+            it be great to execute them instantly? Look no further—the
+            student.codes extension is your solution, with its over 70 supported
+            languages and quick code execution capabilities.
           </Say>
         </p>
 
@@ -28,13 +29,10 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-2 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/1024px-Google_Chrome_icon_%28February_2022%29.svg.png"
+                  src="/images/browsers/chrome.svg"
                   className="aspect-square w-6"
                   alt="Chrome"
                 />
@@ -53,13 +51,10 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=edge"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=edge" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Microsoft_Edge_logo_%282019%29.png"
+                  src="/images/browsers/edge.png"
                   className="aspect-square w-6"
                   alt="Edge"
                 />
@@ -73,13 +68,10 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=opera"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=opera" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Opera_2015_icon.svg/180px-Opera_2015_icon.svg.png"
+                  src="/images/browsers/opera.svg"
                   className="aspect-square w-6"
                   alt="Opera"
                 />
@@ -93,13 +85,10 @@ export default function BrowserExtensionPlatformPage() {
               className="flex items-center gap-3 rounded-full"
               asChild
             >
-              <Link
-                href="https://go.student.codes/chrome-extension?for=brave"
-                target="_blank"
-              >
+              <Link href="/go/chrome-extension?for=brave" target="_blank">
                 {/** biome-ignore lint/performance/noImgElement: Want to use img */}
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Brave_lion_icon.svg"
+                  src="/images/browsers/brave.svg"
                   className="aspect-square w-6"
                   alt="Brave"
                 />
@@ -114,13 +103,10 @@ export default function BrowserExtensionPlatformPage() {
             className="flex items-center gap-2 rounded-full"
             asChild
           >
-            <Link
-              href="https://go.student.codes/firefox-extension"
-              target="_blank"
-            >
+            <Link href="/go/firefox-extension" target="_blank">
               {/** biome-ignore lint/performance/noImgElement: Want to use img */}
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/800px-Firefox_logo%2C_2019.svg.png"
+                src="/images/browsers/firefox.svg"
                 className="aspect-square w-6"
                 alt="Firefox"
               />

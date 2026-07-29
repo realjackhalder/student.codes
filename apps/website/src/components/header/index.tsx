@@ -87,7 +87,7 @@ export function Header() {
         <div>
           <Button variant="ghost" size="icon" asChild>
             <a
-              href="https://discord.gg/TUskQz75F6"
+              href="https://discord.gg/WMuCvVn5uh"
               target="_blank"
               rel="noreferrer"
             >

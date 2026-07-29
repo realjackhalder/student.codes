@@ -23,10 +23,10 @@ export default function TermsOfServicePage() {
           Introduction
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Welcome to student.codes ("service"), a set of products provided by student.codes
-          Software ("we", "our", "us"). By using any of our products, you agree
-          to the following terms. If you do not agree, you may not use our
-          service.
+          Welcome to student.codes ("service"), a set of products provided by
+          student.codes Software ("we", "our", "us"). By using any of our
+          products, you agree to the following terms. If you do not agree, you
+          may not use our service.
         </p>
 
         <h2 className="mt-10 scroll-m-20 border-b pb-1 font-semibold text-3xl tracking-tight first:mt-0">
@@ -38,21 +38,21 @@ export default function TermsOfServicePage() {
         </p>
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           <li>
-            You will use our services lawfully and in compliance with
-            applicable laws and regulations.
+            You will use our services lawfully and in compliance with applicable
+            laws and regulations.
           </li>
           <li>
             You will not use our services for any unauthorised or illegal
-            purposes, including infringement of intellectual property rights
-            and data protection laws.
+            purposes, including infringement of intellectual property rights and
+            data protection laws.
           </li>
           <li>
             You will not engage in activities that harm or disrupt our service
             or interfere with other users.
           </li>
           <li>
-            You will not create, distribute, or promote hate speech,
-            harassment, or discrimination.
+            You will not create, distribute, or promote hate speech, harassment,
+            or discrimination.
           </li>
           <li>
             You will not impersonate others or misrepresent your identity.
@@ -77,9 +77,9 @@ export default function TermsOfServicePage() {
           Limitation of Liability
         </h2>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          student.codes and its affiliates shall not be liable for any
-          direct, indirect, incidental, or consequential damages arising from
-          the use or inability to use our services.
+          student.codes and its affiliates shall not be liable for any direct,
+          indirect, incidental, or consequential damages arising from the use or
+          inability to use our services.
         </p>
 
         <h2 className="mt-10 scroll-m-20 border-b pb-1 font-semibold text-3xl tracking-tight first:mt-0">

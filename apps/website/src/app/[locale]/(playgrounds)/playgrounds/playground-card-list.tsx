@@ -10,7 +10,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@evaluate/components/select';
-import { Separator } from '@evaluate/components/separator';
 import { toast } from '@evaluate/components/toast';
 import { Say, useSay } from '@sayable/react';
 import {
@@ -59,14 +58,18 @@ export function PlaygroundCardList({
 
   type SortBy = 'popularity' | 'name';
   const [sortBy, setSortBy] = useQueryParameter<SortBy>('sort', 'popularity');
+  const [pinnedRuntimeIds] = useLocalStorage<string[]>('evaluate.pinned', []);
+
   const sortedRuntimes = useMemo(() => {
-    return [...searchedRuntimes].sort((a, b) => {
+    const unpinned = searchedRuntimes.filter(
+      (r) => !pinnedRuntimeIds.includes(r.id),
+    );
+    return unpinned.sort((a, b) => {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
       return b.popularity - a.popularity;
     });
-  }, [searchedRuntimes, sortBy]);
+  }, [searchedRuntimes, sortBy, pinnedRuntimeIds]);
 
-  const [pinnedRuntimeIds] = useLocalStorage<string[]>('evaluate.pinned', []);
   const pinnedRuntimes = useMemo(() => {
     return pinnedRuntimeIds
       .map((id) => initialRuntimes.find((r) => r.id === id))
@@ -131,23 +134,8 @@ export function PlaygroundCardList({
         </Select>
       </div>
 
-      {pinnedRuntimes.length > 0 && (
-        <>
-          <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-            {pinnedRuntimes.map((runtime) => (
-              <PlaygroundCard
-                key={runtime.id}
-                runtime={runtime}
-                hash={hash || undefined}
-              />
-            ))}
-          </div>
-          <Separator />
-        </>
-      )}
-
       <div className="grid grid-cols-1 xs:grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7">
-        {sortedRuntimes.map((runtime) => (
+        {[...pinnedRuntimes, ...sortedRuntimes].map((runtime) => (
           <PlaygroundCard
             key={runtime.id}
             runtime={runtime}

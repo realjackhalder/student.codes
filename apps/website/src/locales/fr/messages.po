@@ -1,0 +1,322 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-07-28 17:43+0700\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"X-Generator: sayable\n"
+
+#: src/components/terminal/html-preview.tsx:40
+msgid "Nothing to render here."
+msgstr "Rien à afficher ici."
+
+#: src/components/terminal/index.tsx:44
+msgid "Run"
+msgstr "Exécuter"
+
+#: src/components/terminal/index.tsx:59
+msgid "Compile"
+msgstr "Compiler"
+
+#: src/components/terminal/index.tsx:74
+msgid "Preview"
+msgstr "Aperçu"
+
+#: src/components/terminal/index.tsx:88
+msgid "Clear"
+msgstr "Effacer"
+
+#: src/components/terminal/index.tsx:102
+msgid "Your code execution exceeded the allotted time and was terminated. Consider optimising it for better performance."
+msgstr ""
+
+#: src/components/terminal/index.tsx:107
+msgid "Your code executed successfully; however, it did not generate any output for the console."
+msgstr ""
+
+#: src/components/terminal/index.tsx:112
+msgid "Write your code and press <0/> to execute it. The results will be displayed here."
+msgstr ""
+
+#: src/components/terminal/index.tsx:132
+msgid "Your code compilation exceeded the allotted time and was terminated. Consider optimising your code for faster compilation."
+msgstr ""
+
+#: src/components/terminal/index.tsx:138
+msgid "<0>If</0> this runtime requires compilation, the output will be displayed here."
+msgstr ""
+
+#: src/components/terminal/index.tsx:156
+msgid "This runtime does not have a way to display any preview."
+msgstr ""
+
+#: src/components/header/index.tsx:50
+#: src/app/[locale]/page.tsx:58
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:21
+msgid "Playgrounds"
+msgstr "Environnements"
+
+#: src/components/header/index.tsx:61
+#: src/app/[locale]/page.tsx:79
+msgid "Browser Extension"
+msgstr "Extension de navigateur"
+
+#: src/components/header/index.tsx:63
+msgid "new"
+msgstr "nouveau"
+
+#: src/components/header/index.tsx:70
+#: src/app/[locale]/page.tsx:100
+msgid "Discord Bot"
+msgstr "Bot Discord"
+
+#: src/components/header/index.tsx:137
+msgid "Toggle Mobile Navigation"
+msgstr "Basculer la navigation mobile"
+
+#: src/components/header/locale-switcher.tsx:25
+msgid "Change Language"
+msgstr "Changer de langue"
+
+#: src/components/header/theme-switcher.tsx:26
+msgid "Toggle Theme"
+msgstr "Changer de thème"
+
+#: src/components/explorer/index.tsx:43
+msgid "Explorer"
+msgstr "Explorateur"
+
+#: src/components/explorer/index.tsx:49
+#: src/components/explorer/index.tsx:57
+msgid "New File"
+msgstr "Nouveau fichier"
+
+#: src/components/explorer/index.tsx:62
+#: src/components/explorer/index.tsx:70
+msgid "New Folder"
+msgstr "Nouveau dossier"
+
+#: src/components/explorer/index.tsx:75
+#: src/components/explorer/index.tsx:83
+msgid "Download as Zip"
+msgstr "Télécharger en Zip"
+
+#: src/components/explorer/index.tsx:108
+msgid "This is the file explorer. Create a new file to get started."
+msgstr "Voici l'explorateur de fichiers. Créez un fichier pour commencer."
+
+#: src/components/explorer/name.tsx:36
+msgid "A name must be provided."
+msgstr "Un nom doit être fourni."
+
+#: src/components/explorer/name.tsx:38
+msgid "This name is invalid."
+msgstr "Ce nom est invalide."
+
+#: src/components/explorer/name.tsx:40
+msgid "This name already exists."
+msgstr "Ce nom existe déjà."
+
+#: src/components/explorer/name.tsx:80
+#: src/components/editor/opened-files/button.tsx:40
+msgid "CLI Arguments"
+msgstr "Arguments CLI"
+
+#: src/components/explorer/name.tsx:81
+#: src/components/editor/opened-files/button.tsx:41
+msgid "STDIN"
+msgstr "Entrée standard (STDIN)"
+
+#: src/components/explorer/use.tsx:68
+msgid "Saved and copied URL to clipboard"
+msgstr "Enregistré et URL copiée dans le presse-papiers"
+
+#: src/components/explorer/file/item.tsx:65
+msgid "Rename File"
+msgstr "Renommer le fichier"
+
+#: src/components/explorer/file/item.tsx:81
+msgid "Delete File"
+msgstr "Supprimer le fichier"
+
+#: src/components/editor/opened-files/button.tsx:42
+msgid "Untitled"
+msgstr "Sans titre"
+
+#: src/components/editor/execute-bar/index.tsx:119
+msgid "Select an entry file..."
+msgstr "Sélectionner un fichier d'entrée..."
+
+#: src/components/editor/execute-bar/index.tsx:134
+msgid "No files found"
+msgstr "Aucun fichier trouvé"
+
+#: src/components/editor/execute-bar/index.tsx:150
+msgid "<0>Execute</0> <1>{2}</1> <3>Code</3>"
+msgstr ""
+
+#: src/app/manifest.ts:10
+#: src/app/[locale]/metadata.ts:15
+msgid "Test code in any programming language with student.codes! Run code snippets in your browser, without installing anything."
+msgstr ""
+
+#: src/app/[locale]/metadata.ts:17
+msgid "online playground"
+msgstr ""
+
+#: src/app/[locale]/metadata.ts:18
+msgid "code playground"
+msgstr ""
+
+#: src/app/[locale]/metadata.ts:19
+msgid "code sandbox"
+msgstr ""
+
+#: src/app/[locale]/metadata.ts:20
+msgid "online compiler"
+msgstr ""
+
+#: src/app/[locale]/metadata.ts:21
+msgid "online interpreter"
+msgstr ""
+
+#: src/app/[locale]/page.tsx:25
+msgid "student.codes Platform"
+msgstr "Plateforme student.codes"
+
+#: src/app/[locale]/page.tsx:27
+msgid "Coming Soon"
+msgstr "Bientôt disponible"
+
+#: src/app/[locale]/page.tsx:34
+msgid "The Next-Gen"
+msgstr "La nouvelle génération de"
+
+#: src/app/[locale]/page.tsx:36
+msgid "Code Sandbox"
+msgstr "Bac à sable de code"
+
+#: src/app/[locale]/page.tsx:40
+msgid "We are working hard to bring you the ultimate online platform for testing, sharing, and running code snippets across 70+ programming languages."
+msgstr "Nous travaillons dur pour vous offrir la meilleure plateforme en ligne pour tester, partager et exécuter du code dans plus de 70 langages."
+
+#: src/app/[locale]/page.tsx:61
+msgid "Explore interactive code environments directly in your browser."
+msgstr "Explorez des environnements de code interactifs directement dans votre navigateur."
+
+#: src/app/[locale]/page.tsx:66
+msgid "Explore Playgrounds"
+msgstr "Explorer les environnements"
+
+#: src/app/[locale]/page.tsx:82
+msgid "Execute code snippets instantly while browsing Chrome or Firefox."
+msgstr "Exécutez du code instantanément tout en naviguant sur Chrome ou Firefox."
+
+#: src/app/[locale]/page.tsx:87
+msgid "Get Extension"
+msgstr "Obtenir l'extension"
+
+#: src/app/[locale]/page.tsx:103
+msgid "Run code snippets directly in your Discord servers with friends."
+msgstr "Exécutez du code directement dans vos serveurs Discord avec vos amis."
+
+#: src/app/[locale]/page.tsx:108
+msgid "Add Discord Bot"
+msgstr "Ajouter le bot Discord"
+
+#: src/app/[locale]/page.tsx:122
+msgid "Try Playgrounds Now"
+msgstr "Essayer les environnements"
+
+#: src/app/[locale]/(products)/products/discord-bot/page.tsx:10
+msgid "The <0>student.codes</0> Discord Bot"
+msgstr ""
+
+#: src/app/[locale]/(products)/products/discord-bot/page.tsx:15
+msgid "Run code snippets directly in your Discord server with the student.codes bot! student.codes supports over 70 languages and is perfect for quickly testing code and sharing results with your friends."
+msgstr ""
+
+#: src/app/[locale]/(products)/products/discord-bot/page.tsx:38
+msgid "student.codes for <0>Discord</0>"
+msgstr ""
+
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:11
+msgid "The <0>student.codes</0> Browser Extension"
+msgstr ""
+
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:17
+msgid "When you stumble upon code snippets while browsing the web, wouldn't it be great to execute them instantly? Look no further—the student.codes extension is your solution, with its over 70 supported languages and quick code execution capabilities."
+msgstr ""
+
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:40
+msgid "student.codes for <0>Chrome</0>"
+msgstr ""
+
+#: src/app/[locale]/(products)/products/browser-extension/page.tsx:114
+msgid "student.codes for <0>Firefox</0>"
+msgstr ""
+
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:24
+msgid "Explore and run code in different programming languages and runtimes."
+msgstr "Explorez et exécutez du code dans différents langages et environnements."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/page.tsx:30
+msgid "Powered by the Piston execution engine."
+msgstr "Propulsé par le moteur d'exécution Piston."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:83
+msgid "Choose a playground!"
+msgstr "Choisissez un environnement !"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:96
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:97
+msgid "Search runtime playgrounds..."
+msgstr "Rechercher des environnements..."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:109
+msgid "Clear Search"
+msgstr "Effacer la recherche"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:117
+msgid "Sort by..."
+msgstr "Trier par..."
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:119
+msgid "Toggle Sort By Dropdown"
+msgstr ""
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:125
+msgid "Sort By"
+msgstr "Trier par"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:128
+msgid "Popularity"
+msgstr "Popularité"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card-list.tsx:131
+msgid "Name"
+msgstr "Nom"
+
+#: src/app/[locale]/(playgrounds)/playgrounds/playground-card.tsx:83
+msgid "Open {0} Playground"
+msgstr "Ouvrir l'environnement {0}"
+
+#: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:10
+msgid "Not Found"
+msgstr "Non trouvé"
+
+#: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:13
+msgid "Hmm, we couldn't find the playground you're looking for."
+msgstr ""
+
+#: src/app/[locale]/(editor)/playgrounds/[playground]/not-found.tsx:19
+msgid "Browse Playgrounds"
+msgstr "Parcourir les environnements"
+
+#: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:28
+msgid "{0} Online Playground on student.codes"
+msgstr ""
+
+#: src/app/[locale]/(editor)/playgrounds/[playground]/page.tsx:29
+msgid "Run {0} and more code snippets online in your browser with student.codes's code playground."
+msgstr ""
