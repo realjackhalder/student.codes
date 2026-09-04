@@ -1,31 +1,23 @@
 {
-  "name": "student.codes",
-  "packageManager": "pnpm@10.18.3",
-  "workspaces": ["apps/*", "bots/*", "extensions/*", "packages/*"],
+  "name": "student-codes",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "lint": "biome check . --write",
-    "format": "biome check . --write",
-    "check": "turbo run check",
-    "build": "turbo run build",
-    "build:packages": "turbo run build --filter=\"./packages/*\"",
-    "dev": "pnpm run \"/dev:.*/\"",
-    "dev:packages": "turbo watch build --filter=\"./packages/*\"",
-    "dev:apps": "turbo run dev --filter=\"./apps/*\"",
-    "prepare": "test -z \"$CI\" && husky || true; ts-patch install",
-    "graph": "pnpx nx@18 graph"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lucide-react": "^0.542.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.6",
-    "@evaluate/scripts": "workspace:^",
-    "@types/node": "^22.18.11",
-    "husky": "^9.1.7",
-    "next": "15.5.7",
-    "ts-patch": "^3.3.0",
-    "turbo": "^2.5.8",
-    "typescript": "^5.9.3",
-    "typescript-transform-paths": "^3.5.5"
-  },
-  "patchedDependencies": {
-    "@tailwindcss/vite@4.1.11@4.1.11": "patches/@tailwindcss__vite@4.1.11.patch"
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
   }
 }
