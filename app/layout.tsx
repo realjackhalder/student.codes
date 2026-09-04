@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'student.codes — Code, ICT & AI for students',
+  title: 'like student — Code, ICT & AI for students',
   description: 'Explore clear learning paths, practical resources, and student projects across programming, ICT, and artificial intelligence.',
 };
 
