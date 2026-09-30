@@ -1,35 +1,142 @@
-import { ArrowRight, BrainCircuit, Code2, Cpu, Github, Menu, Sparkles } from 'lucide-react';
-import { Logo } from '../components/logo';
+import { ArrowRight, ArrowUpRight, Sparkles, Terminal } from 'lucide-react';
+import { Header } from '../components/header';
+import { MetricsTicker } from '../components/metrics-ticker';
+import { TrackSelector } from '../components/track-selector';
+import { CodePlayground } from '../components/code-playground';
+import { ProjectBlueprints } from '../components/project-blueprints';
 import { ResourceExplorer } from '../components/resource-explorer';
-
-const paths = [
-  { icon: Code2, label: 'Code', title: 'Think in code. Build for real.', text: 'Go from your first line to complete projects with clear paths for web, apps, Python, and more.', tags: ['Web development', 'Python', 'Git & GitHub'], className: 'green' },
-  { icon: Cpu, label: 'ICT', title: 'Understand the systems around you.', text: 'Learn how computers, networks, cloud services, data, and cybersecurity work together.', tags: ['Networking', 'Cybersecurity', 'Cloud'], className: 'blue' },
-  { icon: BrainCircuit, label: 'AI', title: 'Learn and build with intelligence.', text: 'Explore AI foundations, prompting, models, responsible use, and hands-on project ideas.', tags: ['AI foundations', 'Prompting', 'Open source'], className: 'purple' },
-];
-
-const steps = [
-  ['01', 'Explore', 'Choose a topic based on what you want to understand or create.'],
-  ['02', 'Learn', 'Follow a focused path with practical resources and simple explanations.'],
-  ['03', 'Build', 'Turn knowledge into a project you can share in your portfolio.'],
-];
+import { RoadmapStepper } from '../components/roadmap-stepper';
+import { FAQAccordion } from '../components/faq-accordion';
+import { CommunityTerminal } from '../components/community-terminal';
+import { Logo } from '../components/logo';
 
 export default function Home() {
-  return <>
-    <header className="site-header"><Logo /><nav><a href="#paths">Paths</a><a href="#resources">Resources</a><a href="#roadmap">How it works</a><a href="#community">Community</a></nav><div className="header-actions"><a className="icon-link" href="https://github.com/realjackhalder/student.codes" aria-label="GitHub"><Github size={18} /></a><a href="#resources" className="button small">Start exploring <ArrowRight size={15} /></a><button className="menu" aria-label="Open menu"><Menu /></button></div></header>
+  return (
+    <>
+      <Header />
 
-    <main>
-      <section className="hero"><div className="hero-grid" /><div className="orb orb-one" /><div className="orb orb-two" /><div className="eyebrow"><Sparkles size={14} /> The student guide to tomorrow&apos;s skills</div><h1>Learn technology.<br /><em>Build your future.</em></h1><p className="hero-copy">A clear place for students to discover coding, ICT, and artificial intelligence—then turn what they learn into real projects.</p><div className="hero-actions"><a href="#paths" className="button">Explore learning paths <ArrowRight size={17} /></a><a href="#resources" className="text-link">Browse all resources <ArrowRight size={16} /></a></div><div className="topic-strip"><span>START WITH</span><a href="#code"><Code2 size={16} /> Coding</a><a href="#ict"><Cpu size={16} /> ICT</a><a href="#ai"><BrainCircuit size={16} /> Artificial Intelligence</a></div></section>
+      <main id="main-content">
+        {/* Hero Section — Monumental NDS Typography */}
+        <section className="hero">
+          <div className="eyebrow">
+            <span className="eyebrow-pill">2026 PLATFORM</span>
+            <Sparkles size={14} />
+            <span>The Open Technology Guide for Tomorrow&apos;s Engineers</span>
+          </div>
 
-      <section className="section" id="paths"><div className="section-heading"><div><span className="kicker">LEARNING PATHS</span><h2>Choose where you want to grow.</h2></div><p>Focused topics, useful resources, and project ideas—organized to help you move forward without the noise.</p></div><div className="path-grid">{paths.map((path, index) => { const Icon=path.icon; return <article className={`path-card ${path.className}`} id={index === 0 ? 'code' : index === 1 ? 'ict' : 'ai'} key={path.label}><div className="path-top"><span className="path-icon"><Icon /></span><span className="path-number">0{index + 1}</span></div><span className="path-label">{path.label}</span><h3>{path.title}</h3><p>{path.text}</p><div className="tags">{path.tags.map(tag => <span key={tag}>{tag}</span>)}</div><a href="#resources">Explore {path.label} <ArrowRight size={16} /></a></article>; })}</div></section>
+          <h1 className="hero-heading">
+            Learn technology.<br />
+            <em>Build your future.</em>
+          </h1>
 
-      <ResourceExplorer />
+          <p className="hero-copy">
+            A free, uncompromised curriculum for ambitious students to master artificial intelligence,
+            modern full-stack systems, cloud infrastructure, and cybersecurity defense.
+          </p>
 
-      <section className="section roadmap" id="roadmap"><div className="roadmap-intro"><span className="kicker">YOUR ROADMAP</span><h2>From curious<br />to capable.</h2><p>You do not need to know everything. You just need a useful next step.</p><a href="#resources" className="button dark">Find your next step <ArrowRight size={16} /></a></div><div className="steps">{steps.map(([n,title,text]) => <div className="step" key={n}><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></div>)}</div></section>
+          <div className="hero-actions">
+            <a href="#tracks" className="button accent">
+              Explore Learning Tracks <ArrowRight size={16} />
+            </a>
+            <a href="#playground" className="button outline">
+              Launch Code Lab <Terminal size={15} />
+            </a>
+          </div>
 
-      <section className="community" id="community"><div><span className="kicker light">OPEN TO EVERY STUDENT</span><h2>Learn in public.<br />Grow together.</h2><p>Student + Codes is becoming an open, student-led knowledge hub. Suggest a resource, share a project, or help make a learning path better.</p><a href="https://github.com/realjackhalder/student.codes" className="button light-button"><Github size={17} /> Join on GitHub</a></div><div className="community-code"><div className="code-dots"><i /><i /><i /><span>community.ts</span></div><pre><b>const</b> student = {'{'}{`\n`}  curious: <i>true</i>,{`\n`}  learning: <i>true</i>,{`\n`}  future: <strong>&quot;being built&quot;</strong>{`\n`}{'}'};</pre></div></section>
-    </main>
+          <div className="topic-strip" aria-label="Core disciplines">
+            <span className="topic-strip-label">CORE DISCIPLINES</span>
+            <a href="#tracks">Autonomous AI</a>
+            <a href="#tracks">Full-Stack Craft</a>
+            <a href="#tracks">Distributed Systems</a>
+            <a href="#tracks">Cyber Defense</a>
+            <a href="#blueprints">Blueprints</a>
+          </div>
+        </section>
 
-    <footer><Logo /><p>Code, ICT, and AI learning for every curious student.</p><div><a href="#paths">Paths</a><a href="#resources">Resources</a><a href="https://github.com/realjackhalder/student.codes">GitHub</a></div><small>© {new Date().getFullYear()} Student + Codes</small></footer>
-  </>;
+        {/* High-Impact Metrics Ticker */}
+        <MetricsTicker />
+
+        {/* Philosophy Statement Section */}
+        <section className="statement-section" aria-label="Core philosophy">
+          <div className="statement-inner">
+            <span className="kicker">THE PRINCIPLE</span>
+            <blockquote className="statement-text">
+              &ldquo;Every expert was once a beginner. The only difference is they started—and refused to stop.&rdquo;
+            </blockquote>
+            <p className="statement-sub">
+              Engineered on the conviction that high-quality, production-grade technical education
+              must remain completely open, free, and accessible to every curious student on Earth.
+            </p>
+          </div>
+        </section>
+
+        {/* 1. Interactive 4-Track Curriculum Selector */}
+        <TrackSelector />
+
+        {/* 2. Interactive Terminal & Code Playground */}
+        <CodePlayground />
+
+        {/* 3. Portfolio Project Blueprints Showcase */}
+        <ProjectBlueprints />
+
+        {/* 4. Curated 2026 Resource Library (Cream Contrast Section) */}
+        <ResourceExplorer />
+
+        {/* 5. Progressive 4-Phase Roadmap with Interactive Checklists */}
+        <RoadmapStepper />
+
+        {/* 6. Categorized Interactive FAQ */}
+        <FAQAccordion />
+
+        {/* 7. Open-Source Community Terminal */}
+        <CommunityTerminal />
+      </main>
+
+      {/* Official Government / Federal Style Footer */}
+      <footer className="site-footer">
+        <div className="footer-top">
+          <div className="footer-brand">
+            <Logo />
+            <p className="footer-tagline">
+              Autonomous AI, Full-Stack Craft, Cloud Infrastructure, and Cyber Defense engineered for every curious student.
+            </p>
+            <div className="footer-status-pill">
+              <span className="pulse-dot"></span> All 4 Tracks Active &amp; Up to Date (2026)
+            </div>
+          </div>
+          <div className="footer-links">
+            <div className="footer-col">
+              <span className="footer-heading">Disciplines</span>
+              <a href="#tracks">Autonomous AI</a>
+              <a href="#tracks">Full-Stack &amp; React 19</a>
+              <a href="#tracks">Cloud &amp; Rust Systems</a>
+              <a href="#tracks">Cyber Defense</a>
+            </div>
+            <div className="footer-col">
+              <span className="footer-heading">Tooling</span>
+              <a href="#playground">Code Lab &amp; REPL</a>
+              <a href="#blueprints">Project Blueprints</a>
+              <a href="#resources">Resource Library</a>
+              <a href="#roadmap">Milestone Tracker</a>
+            </div>
+            <div className="footer-col">
+              <span className="footer-heading">Governance</span>
+              <a href="https://github.com/realjackhalder/student.codes" target="_blank" rel="noopener noreferrer">
+                GitHub Repository
+              </a>
+              <a href="https://github.com/realjackhalder/student.codes/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                MIT License
+              </a>
+              <a href="#faq">Frequently Asked</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <small>© {new Date().getFullYear()} Student + Codes. An open public initiative for computing education.</small>
+          <span className="footer-credit">Engineered with care · Free forever</span>
+        </div>
+      </footer>
+    </>
+  );
 }
